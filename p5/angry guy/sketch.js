@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<h1>Angry Guy</h1>
+	</body>
+</html>
+
 function setup() {
   	createCanvas(400, 400);
 }
