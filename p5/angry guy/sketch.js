@@ -4,69 +4,42 @@ function setup() {
 }
 
 function draw() {
-    		noStroke();
+    		// head
+		fill(240, 200, 130);
+		ellipse(205, 56, 80, 96);
 
-// variables
-    var headsize=70;
-    var eyesize=15;
-    var nosesize3=15;
-    var buttonsize=15;
-    var legwidth=30;
-    var legheight=73;
-    var armwidth=243;
-    var armheight=21;
-    var handsize=30;
-    var shoewidth=77;
-    var shoeheight=32;
+		// left eye
+		fill(0, 0, 0);
+		ellipse(192, 51, 15, 15);
 
-// legs
-    fill(141, 143, 132);
-    rect(217, 248, legwidth, legheight);
-    rect(157, 248, legwidth, legheight);
+		// right eye
+		fill(0, 0, 0);
+		ellipse(222, 51, 15, 15);
 
-// shoes
-    fill(122, 99, 255);
-    ellipse(247, 317, shoewidth, shoeheight);
-    ellipse(160, 317, shoewidth, shoeheight);
-    
-// arms
-    fill(141, 143, 132);
-    rect(81, 145, armwidth, armheight);
+		// left eyebrow 
+		line(203, 44, 179, 35);
 
-// hands
-    fill(242, 217, 175);
-    ellipse(318, 155, handsize, handsize);
-    ellipse(90, 155, handsize, handsize);
+		// right eyebrow
+		line(211, 43, 236, 35);
 
-// body
-    fill(235, 127, 127);
-    ellipse(200, 196, 140, 150);
+		// mouth
+		fill(255, 0, 0);
+		arc(212, 92, 39, 52, 2.86, 6.04);
+		line(193, 99, 232, 84);
 
-// buttons
-    fill(0, 0, 0);
-    ellipse(200, 158, buttonsize, buttonsize);
-    ellipse(200, 187, buttonsize, buttonsize);
-    ellipse(200, 215, buttonsize, buttonsize);
+		// upper chest
+		fill(255, 0, 0);
+		rect(83, 103, 241, 37);
 
-// hair
-    fill(77, 65, 56);
-    ellipse(200, 64, 134, 99);
+		// waist
+		fill(155, 159, 235);
+		rect(150, 103, 107, 131);
 
-// head
-    fill(242, 217, 175);
-    ellipse(200, 100, headsize, headsize);
+		// left leg
+		fill(240, 200, 130);
+		rect(150, 234, 39, 111);
 
-// eyes
-    fill(126, 128, 115);
-    ellipse(213, 90, eyesize, eyesize);
-    ellipse(185, 90, eyesize, eyesize);
+		// right leg
+		rect(218, 234, 39, 111);
 
-// nose
-    fill(255, 3, 3);
-    ellipse(200, 105, nosesize3, nosesize3);
-
-// mouth
-    fill(150, 132, 224);
-    ellipse(201, 121, 38, 7);
-		
 }
