@@ -37,15 +37,15 @@ background(112, 162, 237);
     fill(227, 122, 9);
     triangle(tri1X, tri1Y, tri2X, tri2Y, tri3X, tri3Y);
 
-	var baseX=naseX+160;
-	var baseY=baseY+186;
+	var baseX=naseX+206;
+	var baseY=baseY+51;
 	var houseSize=houseSize-50;
-	var tri1X=tri1X+210
-	var tri1Y=tri1Y+40
-	var tri2X=tri2X+150
-	var tri2Y=tri2Y+40
-	var tri3X=tri3X+180
-	var tri3Y=tri3Y+83
+	var tri1X=tri1X+210;
+	var tri1Y=tri1Y+40;
+	var tri2X=tri2X+150;
+	var tri2Y=tri2Y+40;
+	var tri3X=tri3X+180;
+	var tri3Y=tri3Y+83;
 	
 // house2 base
     fill(122, 50, 50);
