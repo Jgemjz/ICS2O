@@ -17,7 +17,7 @@ Lucca
     var shoeheight=32;
 
 function setup() {
-  createCanvas(840, 680);
+  createCanvas(1040, 880);
 }
 
 function draw() {
