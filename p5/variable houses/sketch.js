@@ -24,7 +24,6 @@ function setup() {
 function draw() {
  
 noStroke();
-
    
     // Background+Grass
         background
@@ -56,7 +55,4 @@ noStroke();
         // Roof 2
             fill(217, 156, 70);
             rect(roofX, roofY, roofSizeX, roofSizeY);
-            
-
-
 }
