@@ -3,7 +3,15 @@
 2017-03-30
 Lucca*/
 
- // Variables
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+ 
+noStroke();
+   
+  // Variables
     
         // House Variables
             var houseX=45;
@@ -17,14 +25,7 @@ Lucca*/
            var roofSizeY=20;
        
 
-function setup() {
-  createCanvas(400, 400);
-}
-
-function draw() {
  
-noStroke();
-   
     // Background+Grass
         background
         (112, 162, 237);
