@@ -21,7 +21,7 @@ function setup() {
   createCanvas(400, 400);
 }
 
-functionHouses() {
+function draw() {
  
 noStroke();
    
