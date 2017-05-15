@@ -73,12 +73,14 @@ function draw() {
     }
 
 // Rectangle
+  
     stroke(0, 0, 0);
     strokeWeight(2);
     fill(173, 135, 135);
     rect(290, 8, 101, 68);
     
-// "Health"
+// Health
+  
     fill(0, 0, 0);
     textSize(21);
     text("Health", 310, 34);
