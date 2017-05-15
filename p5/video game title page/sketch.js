@@ -2,10 +2,6 @@
 2017-04-23 To 2017-05-10
 Lucca*/
 
-function setup() {
-  createCanvas(400, 400);
-}
-
 // Varaibles
 
     var posX = 200;
@@ -28,6 +24,10 @@ function setup() {
     var ballX = 0;
     var ballY = 200;
     var ballZ = 0;
+
+function setup() {
+  createCanvas(400, 400);
+}
 
 function draw() {
     
