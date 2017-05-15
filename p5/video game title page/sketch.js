@@ -6,8 +6,6 @@ function setup() {
   createCanvas(400, 400);
 }
 
-function draw() {
-
 // Varaibles
 
     var posX = 200;
@@ -31,7 +29,7 @@ function draw() {
     var ballY = 200;
     var ballZ = 0;
 
-function = draw() {
+function draw() {
     
 // Background
 
