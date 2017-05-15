@@ -1,4 +1,4 @@
-  /*Potato Dodge Game
+/*Potato Dodge Game
 2017-04-23 To 2017-05-10
 Lucca*/
 
@@ -144,4 +144,4 @@ function = hearts(heartPosX, heartPosY, heartSi) {
     ballY = random(0, 400);
 
   
-}
+};
