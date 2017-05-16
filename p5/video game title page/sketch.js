@@ -91,8 +91,6 @@ function draw() {
     
 }
 
-
-
 function = potato() {
     
     // Stuff
@@ -115,25 +113,25 @@ function = potato() {
 
 function = hearts(heartPosX, heartPosY, heartSi) {
 
-// Junk
+    // Junk
 
-    noStroke();
-    strokeWeight(2);
-    fill(173, 19, 173);
+        noStroke();
+        strokeWeight(2);
+        fill(173, 19, 173);
 
-// Bumps
-    
-    ellipse(heartPosX + 200, heartPosY + 200, heartSizeX + 36, heartSizeY + 60);
-    ellipse(heartPosX + 236, heartPosY + 200, heartSizeX + 36, heartSizeY + 60);
+    // Bumps
 
-// Filler
+        ellipse(heartPosX + 200, heartPosY + 200, heartSizeX + 36, heartSizeY + 60);
+        ellipse(heartPosX + 236, heartPosY + 200, heartSizeX + 36, heartSizeY + 60);
 
-    ellipse(heartPosX + 217, heartPosY + 218, heartSizeX + 50, heartSizeY + 50);
+    // Filler
 
-// Bottom
+        ellipse(heartPosX + 217, heartPosY + 218, heartSizeX + 50, heartSizeY + 50);
 
-    triangle(heartPosX + 215, heartPosY + 294, heartPosX + 252, heartPosY + 216, 
-    heartPosX + 182, heartPosY + 208);
+    // Bottom
+
+        triangle(heartPosX + 215, heartPosY + 294, heartPosX + 252, heartPosY + 216, 
+        heartPosX + 182, heartPosY + 208);
 
 }    
 
