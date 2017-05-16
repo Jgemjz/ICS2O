@@ -56,7 +56,7 @@ function draw() {
         ballU = random(0, 400);
         ballW = random(0, 400);
         ballY = random(0, 400);   
-    
+ 
 // If's 
 
     if(ballZ > 399) {
@@ -82,16 +82,16 @@ function draw() {
         ballT = random(-1, -3);  
         ballS = random(0, 400);
     }
-    
+   
 // Calls
 
     ball();
     potato();
     hearts(148, -147, 0);
-    
+   
 }
 
-function = potato() {
+function potato() {
     
     // Stuff
 
@@ -111,7 +111,7 @@ function = potato() {
          ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
 }
 
-function = hearts(heartPosX, heartPosY, heartSi) {
+function hearts(heartPosX, heartPosY, heartSi) {
 
     // Junk
 
@@ -133,9 +133,9 @@ function = hearts(heartPosX, heartPosY, heartSi) {
         triangle(heartPosX + 215, heartPosY + 294, heartPosX + 252, heartPosY + 216, 
         heartPosX + 182, heartPosY + 208);
 
-}    
+} 
 
-function = ball() {
+function ball() {
 
     fill(255, 0, 0);
 
