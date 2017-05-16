@@ -26,7 +26,8 @@ Lucca*/
     var ballZ = 0;
 
 function setup() {
-  createCanvas(400, 400);
+    
+    createCanvas(400, 400);
 }
 
 function draw() {
@@ -34,6 +35,27 @@ function draw() {
     // Background
     
         background(145, 156, 163);
+    
+// Rectangle
+
+        stroke(0, 0, 0);
+        strokeWeight(2);
+        fill(173, 135, 135);
+        rect(290, 8, 101, 68);
+
+// Health
+
+        fill(0, 0, 0);
+        textSize(21);
+        text("Health", 310, 34);
+        line(308, 40, 374, 40);
+
+// Other Junk
+
+        ballS = random(0, 400);
+        ballU = random(0, 400);
+        ballW = random(0, 400);
+        ballY = random(0, 400);   
     
 // If's 
 
@@ -69,26 +91,7 @@ function draw() {
     
 }
 
-// Rectangle
 
-        stroke(0, 0, 0);
-        strokeWeight(2);
-        fill(173, 135, 135);
-        rect(290, 8, 101, 68);
-
-// Health
-
-        fill(0, 0, 0);
-        textSize(21);
-        text("Health", 310, 34);
-        line(308, 40, 374, 40);
-
-// Other Junk
-
-        ballS = random(0, 400);
-        ballU = random(0, 400);
-        ballW = random(0, 400);
-        ballY = random(0, 400);
 
 function = potato() {
     
