@@ -32,23 +32,16 @@ function setup() {
 function draw() {
     
     // Background
-
+    
         background(145, 156, 163);
+    
+     // Calls
 
-     function = ball() {
-
-            fill(255, 0, 0);
-
-            ellipse(ballY, ballZ, ballSizeX, ballSizeY);
-            ellipse(ballW, ballX, ballSizeX, ballSizeY);
-            ellipse(ballU, ballV, ballSizeX, ballSizeY);
-            ellipse(ballS, ballT, ballSizeX, ballSizeY);
-
-            ballT += random(5, 10);
-            ballV += random(5, 10);
-            ballX += random(5, 10);
-            ballZ += random(5, 10);
-    };
+            ball();
+            potato();
+            hearts(148, -147, 0);
+    
+}
 
     // If's 
 
@@ -86,26 +79,37 @@ function draw() {
         text("Health", 310, 34);
         line(308, 40, 374, 40);
 
-    function = potato() {
-            // Stuff
+   
 
-                stroke(0, 0, 0);
-                strokeWeight(0.5);
+       
 
-            // Potato
+    // Other Junk
 
-                fill(230, 197, 78);
-                ellipse(mouseX, mouseY, 43, 32);
+        ballS = random(0, 400);
+        ballU = random(0, 400);
+        ballW = random(0, 400);
+        ballY = random(0, 400);
 
-            // Spots
+function = potato() {
+    
+    // Stuff
 
-                fill(168, 161, 65);
-                ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
-                ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
-                ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
-        };
+        stroke(0, 0, 0);
+        strokeWeight(0.5);
 
-    function = hearts(heartPosX, heartPosY, heartSi) {
+    // Potato
+
+        fill(230, 197, 78);
+        ellipse(mouseX, mouseY, 43, 32);
+
+    // Spots
+
+         fill(168, 161, 65);
+         ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
+         ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
+         ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
+}
+function = hearts(heartPosX, heartPosY, heartSi) {
 
         // Junk
 
@@ -127,21 +131,19 @@ function draw() {
             triangle(heartPosX + 215, heartPosY + 294, heartPosX + 252, heartPosY + 216, 
                  heartPosX + 182, heartPosY + 208);
 
-    };    
+}    
 
-        // Calls
+function = ball() {
 
-            ball();
-            potato();
-            hearts(148, -147, 0);
-    };
+            fill(255, 0, 0);
 
-    // Other Junk
+            ellipse(ballY, ballZ, ballSizeX, ballSizeY);
+            ellipse(ballW, ballX, ballSizeX, ballSizeY);
+            ellipse(ballU, ballV, ballSizeX, ballSizeY);
+            ellipse(ballS, ballT, ballSizeX, ballSizeY);
 
-        ballS = random(0, 400);
-        ballU = random(0, 400);
-        ballW = random(0, 400);
-        ballY = random(0, 400);
-
-
-};
+            ballT += random(5, 10);
+            ballV += random(5, 10);
+            ballX += random(5, 10);
+            ballZ += random(5, 10);
+}
