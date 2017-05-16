@@ -35,14 +35,6 @@ function draw() {
     
         background(145, 156, 163);
     
-     // Calls
-
-            ball();
-            potato();
-            hearts(148, -147, 0);
-    
-}
-
 // If's 
 
     if(ballZ > 399) {
@@ -68,6 +60,14 @@ function draw() {
         ballT = random(-1, -3);  
         ballS = random(0, 400);
     }
+    
+// Calls
+
+    ball();
+    potato();
+    hearts(148, -147, 0);
+    
+}
 
 // Rectangle
 
