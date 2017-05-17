@@ -15,7 +15,7 @@ Lucca*/
     var heartPosY = 0;
     var heartSizeX = 0;
     var heartSizeY = 0;
-    
+
     var ballS = 200;
     var ballT = 0;
     var ballU = 200;
@@ -24,10 +24,12 @@ Lucca*/
     var ballX = 0;
     var ballY = 200;
     var ballZ = 0;
+    var lava = [ballS, ballT, BallU, ballV, ballW, ballX, ballY, ballZ];
+    
 
 function setup() {
     
-    createCanvas(800, 800);
+    createCanvas(400, 400);
 }
 
 function draw() {
@@ -52,35 +54,35 @@ function draw() {
 
 // Other Junk
 
-        ballS = random(0, 400);
-        ballU = random(0, 400);
-        ballW = random(0, 400);
-        ballY = random(0, 400);   
+        lava[0] = random(0, 400);
+        lava[2] = random(0, 400);
+        lava[5] = random(0, 400);
+        lava[6] = random(0, 400);   
  
 // If's 
 
     if(ballZ > 399) {
         
-        ballZ = random(-1, -13);  
-        ballY = random(0, 400);
+        lava[7] = random(-1, -13);  
+        lava[6] = random(0, 400);
     }
 
     if(ballX > 399) {
         
-        ballX = random(-1, -7);  
-        ballW = random(0, 400);
+        lava[5] = random(-1, -7);  
+        lava[4] = random(0, 400);
     }
 
     if(ballV > 399) {
         
-        ballV = random(-1, -3);  
-        ballU = random(0, 400);
+        lava[3] = random(-1, -3);  
+        lava[2] = random(0, 400);
     }
 
     if(ballT > 399) {
         
-        ballT = random(-1, -3);  
-        ballS = random(0, 400);
+        lava[1] = random(-1, -3);  
+        lava[0] = random(0, 400);
     }
    
 // Calls
@@ -139,13 +141,13 @@ function ball() {
 
     fill(255, 0, 0);
 
-    ellipse(ballY, ballZ, ballSizeX, ballSizeY);
-    ellipse(ballW, ballX, ballSizeX, ballSizeY);
-    ellipse(ballU, ballV, ballSizeX, ballSizeY);
-    ellipse(ballS, ballT, ballSizeX, ballSizeY);
+    ellipse(lava[6], lava[7], ballSizeX, ballSizeY);
+    ellipse(lava[4], lava[5], ballSizeX, ballSizeY);
+    ellipse(lava[2], lava[3], ballSizeX, ballSizeY);
+    ellipse(lava[0], lava[1], ballSizeX, ballSizeY);
 
-    ballT += random(5, 10);
-    ballV += random(5, 10);
-    ballX += random(5, 10);
-    ballZ += random(5, 10);
+    lava[1] += random(5, 10);
+    lava[3] += random(5, 10);
+    lava[5] += random(5, 10);
+    lava[7] += random(5, 10);
 }
