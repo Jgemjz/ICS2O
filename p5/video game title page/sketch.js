@@ -24,7 +24,7 @@ Lucca*/
     var ballX = 0;
     var ballY = 200;
     var ballZ = 0;
-    var lava = [ballS, ballT, BallU, ballV, ballW, ballX, ballY, ballZ];
+    var lava = [ballS, ballT, ballU, ballV, ballW, ballX, ballY, ballZ];
     
 
 function setup() {
@@ -61,25 +61,25 @@ function draw() {
  
 // If's 
 
-    if(ballZ > 399) {
+    if(lava[7] > 399) {
         
         lava[7] = random(-1, -13);  
         lava[6] = random(0, 400);
     }
 
-    if(ballX > 399) {
+    if(lava[5] > 399) {
         
         lava[5] = random(-1, -7);  
         lava[4] = random(0, 400);
     }
 
-    if(ballV > 399) {
+    if(lava[3] > 399) {
         
         lava[3] = random(-1, -3);  
         lava[2] = random(0, 400);
     }
 
-    if(ballT > 399) {
+    if(lava[1] > 399) {
         
         lava[1] = random(-1, -3);  
         lava[0] = random(0, 400);
