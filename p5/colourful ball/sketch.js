@@ -2,30 +2,28 @@
 2017-05-18
 Lucca*/
 
-function setup() {
-  createCanvas(400, 400);
-}
-  
 // Variables
 
     var posX = -50;
     var posY = 54;
     var ballSize = 72;
-    
-function draw() {
-    
-    // Background
-    
-        background(145, 65, 65);
-    
-      
-    
-    // Calls
-    
-        ball();
- };
 
-function ball() {
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+
+    // Background
+
+        background(145, 65, 65);
+
+    // Calls
+
+        ball();
+};
+
+  function ball() {
         
         fill(random(0, 255), random(0, 255), random(0, 255));
         ellipse(posX, posY, ballSize, ballSize);
@@ -47,6 +45,6 @@ function ball() {
         }
         
         posX+=2; 
-    };
+    }
 
 }
