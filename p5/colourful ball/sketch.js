@@ -9,6 +9,7 @@ Lucca*/
     var ballSize = 72;
 
 function setup() {
+    
   createCanvas(400, 400);
 }
 
@@ -38,13 +39,13 @@ function draw() {
         ellipse(posX, posY+144+72, ballSize, ballSize);
         
         fill(random(0, 255), random(0, 255), random(0, 255));
-        ellipse(posX, posY+144+144, ballSize, ballSize);
+        ellipse(posX, posY+288, ballSize, ballSize);
         
-        if (posX>430) {
-        posX=-30;
+        if (posX > 430) {
+        posX = -30;
         }
         
-        posX+=2; 
+        posX += 2; 
     }
 
 }
