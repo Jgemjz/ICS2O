@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html>
+
+	<head>
+		<title>Traffic Light Info</title>
+	</head>
+	
+	<body style="background-color:lightgreen">
+		<h1><u>Traffic Light Info</u></h1>
+		
+		<h2>Basic Requirements</h2>
+		
+		<p>All traffic lights have to follow certain requirements to ensure that accidents don't
+		happen. Here are some of those requirements: </p>
+		
+		<ul>
+			<li>Be sure to have red, amber (yellow), and green lights in that order going down.</li>
+			<li> Make sure that parallel lights are <b> always </b> the same colours. (if you don't you will definintly have collisions)</li>
+			<li> be sure to have a decent 5 seconds between amber (yellow) and red lights. (also to avoid crashes)</li>
+		</ul>
+		
+		<h2>How They Work</h2>
+		
+		<p>Most traffic lights have a noticable pattern for when they change colour. The pattern I noticed was this:</p>
+		
+		<ol>
+			<li>An easy place to start the curcuit is when both sets of lights are red; so both lights will be red for about 2 seconds.</li>
+			<li>Then after they've both been red, make one still red for </li>
+			<li><li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		
+		<h2>Safety Info</h2>
+		
+		<p>A traffic light colour could be the difference between life and death. You should  always 
+		know how to safely use traffic lights. Here's how:</p>
+			
+		<ul>
+			<li>With yellow lights you have to take an excutive decision to either stop 
+			or go. If you see yellow and you're far away then <br>slow down to a stop,
+			If you're close to the yellow light then just keep going through it.</li><br>
+			<li>When you see a red light always slow down to a complete stop.</li>
+		</ul>
+			
+		<h2>My Code</h2>	
+			
+		<p><u>Here's my code for a traffic light circuit I made.</u></p><br>
+		
+		<pre>
+		
+/*Traffic Lights
+2017-05-04 To 2017-05-05
+Lucca*/
+
+int ledRed1 = 10;
+int ledYellow1 = 11;
+int ledGreen1 = 12;
+
+int ledRed2 = 7;
+int ledYellow2 = 8;
+int ledGreen2 = 9;
+
+void setup() {
+			  
+	pinMode(ledYellow1, OUTPUT);
+	pinMode(ledRed1, OUTPUT);
+	pinMode(ledGreen1, OUTPUT);
+			  
+	pinMode(ledGreen2, OUTPUT);
+	pinMode(ledYellow2, OUTPUT);
+	pinMode(ledRed2, OUTPUT);
+}
+
+void loop() {
+
+
+// First Round  
+
+			  
+	// Red 1 and Red 2
+					
+		digitalWrite(ledRed1, HIGH); // Turns ledRed1 On
+		digitalWrite(ledRed2, HIGH); // Turns ledRed2 On
+		delay(2000); // Wait 
+							
+							
+		digitalWrite(ledRed1, LOW); // Turns ledRed1 Off
+		digitalWrite(ledRed2, LOW); // Turns ledRed2 Off
+		delay(0); // Wait 
+		delay(0); // Wait 
+
+	// Red 1 and Green 2
+
+		digitalWrite(ledRed1, HIGH); // Turns ledRed1 On
+		digitalWrite(ledGreen2, HIGH); // Turns ledGreen2 On
+		delay(3000); // Wait 
+							
+		digitalWrite(ledRed1, LOW); // Turns ledRed1 Off
+		digitalWrite(ledGreen2, LOW); // Turns ledGreen2 Off
+		delay(0); // Wait
+		delay(0); // Wait  
+
+	// Red 1 and Yellow 2
+
+		digitalWrite(ledRed1, HIGH); // Turns ledRed1 On
+		digitalWrite(ledYellow2, HIGH); // Turns ledYellow2 On
+		delay(1500); // Wait 
+							
+							
+		digitalWrite(ledRed1, LOW); // Turns ledRed1 Off
+		digitalWrite(ledYellow2, LOW); // Turns ledYellow2 Off
+		delay(0); // Wait 
+		delay(0); // Wait 
+
+	// Red 1 and Red 2
+
+		digitalWrite(ledRed1, HIGH); // Turns ledRed1 On
+		digitalWrite(ledRed2, HIGH); // Turns ledRed2 On
+		delay(2000); // Wait 
+										
+		digitalWrite(ledRed1, LOW); // Turns ledRed1 Off
+		digitalWrite(ledRed2, LOW); // Turns ledRed2 Off
+		delay(0); // Wait 
+		delay(0); // Wait 
+
+
+// Second Round
+
+
+	// Red 2 and Green 1
+
+		digitalWrite(ledRed2, HIGH); // Turns ledRed2 On
+		digitalWrite(ledGreen1, HIGH); // Turns ledGreen1 On
+		delay(3000); // Wait 
+							
+		digitalWrite(ledRed2, LOW); // Turns ledRed2 Off
+		digitalWrite(ledGreen1, LOW); // Turns ledGreen1 Off
+		delay(0); // Wait
+		delay(0); // Wait  
+
+	// Red 2 and Yellow 1
+
+		digitalWrite(ledRed2, HIGH); // Turns ledRed2 On
+		digitalWrite(ledYellow1, HIGH); // Turns ledYellow1 On
+		delay(1500); // Wait 
+							
+							
+		digitalWrite(ledRed2, LOW); // Turns ledRed2 Off
+		digitalWrite(ledYellow1, LOW); // Turns ledYellow1 Off
+		delay(0); // Wait 
+		delay(0); // Wait 
+
+}
+
+	</pre>
+			
+	</body>
+	
+
+</html>
