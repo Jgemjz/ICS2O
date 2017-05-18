@@ -33,6 +33,7 @@ function draw() {
         fill(0, 0, 0);
         textSize(20);
         text("Health", 310, 34);
+        strokeWeight(1);
         line(308, 40, 374, 40);
 
     // Calls
