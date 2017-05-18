@@ -24,7 +24,7 @@ function draw() {
     // Rectangle
 
         stroke(0, 0, 0);
-        strokeWeight(1);
+        strokeWeight(0.5);
         fill(173, 135, 135);
         rect(290, 8, 101, 68);
 
