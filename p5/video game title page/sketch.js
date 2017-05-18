@@ -24,14 +24,14 @@ function draw() {
     // Rectangle
 
         stroke(0, 0, 0);
-        strokeWeight(2);
+        strokeWeight(1);
         fill(173, 135, 135);
         rect(290, 8, 101, 68);
 
     // Health
 
         fill(0, 0, 0);
-        textSize(21);
+        textSize(20);
         text("Health", 310, 34);
         line(308, 40, 374, 40);
 
