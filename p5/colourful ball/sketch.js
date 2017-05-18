@@ -24,7 +24,7 @@ function draw() {
         ball();
 };
 
-  function ball() {
+function ball() {
         
         fill(random(0, 255), random(0, 255), random(0, 255));
         ellipse(posX, posY, ballSize, ballSize);
@@ -46,6 +46,4 @@ function draw() {
         }
         
         posX += 2; 
-    }
-
 }
