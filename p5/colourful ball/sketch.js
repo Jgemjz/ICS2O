@@ -36,7 +36,7 @@ function draw() {
         ellipse(posX, posY+144, ballSize, ballSize);
         
         fill(random(0, 255), random(0, 255), random(0, 255));
-        ellipse(posX, posY+144+72, ballSize, ballSize);
+        ellipse(posX, posY+216, ballSize, ballSize);
         
         fill(random(0, 255), random(0, 255), random(0, 255));
         ellipse(posX, posY+288, ballSize, ballSize);
