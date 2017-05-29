@@ -11,7 +11,7 @@ Lucca*/
     var potatoX = 200;
     var potatoY = 200;
     var potatoSpot = 5;
-    var P = 1;
+    var bool = 1;
 
 function setup() {
 
@@ -65,7 +65,7 @@ function heart() {
     triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
     triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 
-    if(P=1) {
+    if(bool=1) {
     black
     } else {
     pink
