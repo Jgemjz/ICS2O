@@ -31,11 +31,11 @@ function draw() {
         rect(290, 8, 101, 68);
 
     // Health
-
+        
         fill(0, 0, 0);
-        textSize(20);
+        textSize(21);
         text("Health", 310, 34);
-        strokeWeight(1);
+    //Here
         line(308, 40, 374, 40);
 
     function heart() {
