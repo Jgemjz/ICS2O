@@ -62,7 +62,11 @@ function heart() {
 
     if(P=1) {
     fill(0, 0, 0);
+    } 
+    else {
+    fill(215, 77, 222);    
     }
+    
 };
 
 function potato() {
