@@ -11,7 +11,7 @@ Lucca*/
     var potatoX = 200;
     var potatoY = 200;
     var potatoSpot = 5;
-    var bool = 1;
+    var bool = 2;
 
 function setup() {
 
