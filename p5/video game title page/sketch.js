@@ -45,7 +45,7 @@ function draw() {
         heart();
         tX=228;
         heart();
-        tX=228;
+        tX=256;
         heart();
 }
 
