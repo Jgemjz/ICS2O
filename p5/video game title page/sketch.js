@@ -11,7 +11,9 @@ Lucca*/
     var potatoX = 200;
     var potatoY = 200;
     var potatoSpot = 5;
-
+    var heartPink = fill(215, 77, 222);
+    var heartBlack = fill(0, 0, 0);
+    
 function setup() {
 
     createCanvas(400, 400);
@@ -38,6 +40,10 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
+if(1=1) {
+    heartPink=heartBlack;
+}
+    
     // Calls
 
         potato();
@@ -52,7 +58,7 @@ function draw() {
 function heart() {
 
     noStroke();
-    fill(215, 77, 222);
+    fill(heartPink);
     triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
     triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
     triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
