@@ -35,7 +35,7 @@ function draw() {
         fill(0, 0, 0);
         textSize(21);
         text("Health", 310, 34);
-    //Here
+        strokeWeight(1);
         line(308, 40, 374, 40);
 
     function heart() {
@@ -54,7 +54,7 @@ function draw() {
         heart();
         tX+=28;
         heart();
-        tX+=29;
+        tX+=28;
         heart();
 }
 
