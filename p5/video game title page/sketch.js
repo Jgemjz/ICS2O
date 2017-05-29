@@ -42,6 +42,7 @@ function draw() {
     // Calls
     
         potato();
+        tX=200;
         heart();
         tX=228;
         heart();
