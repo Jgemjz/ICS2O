@@ -53,8 +53,11 @@ function draw() {
 }
 
 function heart() {
-var pink = fill(215, 77, 222);
-var black = fill(0, 0, 0);
+    
+    // Local Variables
+
+        var pink = fill(215, 77, 222);
+        var black = fill(0, 0, 0);
     
     noStroke();
     pink
@@ -64,8 +67,7 @@ var black = fill(0, 0, 0);
 
     if(P=1) {
     black
-    } 
-    else {
+    } else {
     pink
     }
     
