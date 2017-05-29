@@ -53,18 +53,20 @@ function draw() {
 }
 
 function heart() {
-
+var pink = fill(215, 77, 222);
+var black = fill(0, 0, 0);
+    
     noStroke();
-    fill(215, 77, 222);
+    pink
     triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
     triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
     triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 
     if(P=1) {
-    fill(0, 0, 0);
+    black
     } 
     else {
-    fill(215, 77, 222);    
+    pink
     }
     
 };
