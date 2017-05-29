@@ -4,6 +4,8 @@ Lucca*/
 
 // Golbal Varaibles
 
+    var tX = 200;
+    var tY = 200;
     var posX = 200;
     var posY = -30;
     var potatoX = 200;
@@ -54,8 +56,6 @@ function heart() {
     
     // Local Variables
     
-        var tX = 200;
-        var tY = 200;
         var pink = fill(215, 77, 222);
         var black = fill(0, 0, 0);
     
