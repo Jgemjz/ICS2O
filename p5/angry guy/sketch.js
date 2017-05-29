@@ -1,3 +1,8 @@
+/*Angry Guy
+2017-05-29
+Lucca*/
+
+// Global Variables
 
 function setup() {
   	createCanvas(400, 400);
