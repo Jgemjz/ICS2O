@@ -18,11 +18,11 @@ Lucca*/
         var lava = [lava0, lava1, lava2, lava3]
 
     // Hearts
-        
+
         var tX = random(5, 395);;
         var tY = -30;
         var bool = 1;
-   
+
 function setup() {
 
     createCanvas(400, 400);
@@ -34,26 +34,26 @@ function setup() {
     }
 
     function lava1 = () {
-        
+
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
+
         lavaY+=1;
     }
 
     function lava2 = () {
-        
+
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
+
         lavaY+=1;
     }
 
     function lava3 = () {
-        
+
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
+
         lavaY+=1;
     }
 
@@ -79,7 +79,7 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Calls
-    
+
         tX=200;
         heart();
         tX=228;
@@ -87,7 +87,7 @@ function draw() {
         tX=256;
         heart();
         potato();
-    
+
         lava0();
         lava1();
         lava2();
@@ -95,12 +95,12 @@ function draw() {
 }
 
 function heart() {
-    
+
     // Local Variables
-    
+
         var pink = fill(215, 77, 222);
         var black = fill(0, 0, 0);
-    
+
     noStroke();
     pink
     triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
@@ -112,7 +112,7 @@ function heart() {
     } else {
     pink;
     }
-    
+
 };
 
 function potato() {
@@ -121,7 +121,7 @@ function potato() {
 
         stroke(0, 0, 0);
         strokeWeight(0.5);
-    
+
     // Potato
 
         fill(230, 197, 78);
