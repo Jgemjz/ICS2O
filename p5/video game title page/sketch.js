@@ -93,7 +93,6 @@ function draw() {
         lavaY+=1;
     }
 
-
 function heart() {
 
     // Local Variables
