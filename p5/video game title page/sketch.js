@@ -12,8 +12,7 @@ Lucca*/
 
     // Lava
 
-        var lavaX = 0;
-        var lavaX = 0;
+        var lavaX = random(5, 395);;
         var lavaY = -30;
         var lavaSize = 50;
 
@@ -71,8 +70,6 @@ function draw() {
     }
 
     function lava1() {
-
-        lavaX = random(5, 395);
         
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
@@ -81,9 +78,7 @@ function draw() {
     }
 
     function lava2() {
-        
-        lavaX = random(5, 395);
-
+       
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
@@ -92,8 +87,6 @@ function draw() {
 
     function lava3() {
         
-        lavaX = random(5, 395);
-
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
