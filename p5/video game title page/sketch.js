@@ -39,17 +39,15 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
-
-    
     // Calls
 
-        potato();
         tX=200;
         heart();
         tX=228;
         heart();
         tX=256;
         heart();
+        potato();
 }
 
 function heart() {
