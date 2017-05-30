@@ -4,15 +4,26 @@ Lucca*/
 
 // Golbal Varaibles
 
-    var tX = 200;
-    var tY = 200;
-    var posX = 200;
-    var posY = -30;
-    var potatoX = 200;
-    var potatoY = 200;
-    var potatoSpot = 5;
-    var bool = 1;
+    // Potato
 
+        var potatoX = 200;
+        var potatoY = 200;
+        var potatoSpot = 5;
+
+    // Lava
+
+        
+        var lavaX = 200;
+        var lavaY = 200;
+        var lavaSize = 50;
+        var lava = [lava0, lava1, lava2, lava3]
+
+    // Hearts
+        
+        var tX = random(5, 395);;
+        var tY = -30;
+        var bool = 1;
+   
 function setup() {
 
     createCanvas(400, 400);
@@ -40,7 +51,7 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Calls
-
+    
         tX=200;
         heart();
         tX=228;
@@ -48,7 +59,35 @@ function draw() {
         tX=256;
         heart();
         potato();
+        lava0();
+        lava1();
+        lava2();
+        lava3();
 }
+
+    function lava0 = () {
+    }
+
+    function lava1 = () {
+        
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
+
+    function lava0 = () {
+        
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
+
+    function lava0 = () {
+        
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
 
 function heart() {
     
