@@ -65,6 +65,8 @@ function draw() {
         lava3();
 }
 
+// Lava Functions
+
     function lava0 = () {
     }
 
@@ -75,14 +77,14 @@ function draw() {
         lavaY+=1;
     }
 
-    function lava0 = () {
+    function lava2 = () {
         
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
         
         lavaY+=1;
     }
 
-    function lava0 = () {
+    function lava3 = () {
         
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
         
