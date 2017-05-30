@@ -26,12 +26,12 @@ Lucca*/
 function setup() {
 
     createCanvas(400, 400);
-}
+};
 
 // Lava Functions
 
     function lava0 = () {
-    }
+    };
 
     function lava1 = () {
 
@@ -39,7 +39,7 @@ function setup() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    }
+    };
 
     function lava2 = () {
 
@@ -47,7 +47,7 @@ function setup() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    }
+    };
 
     function lava3 = () {
 
@@ -55,7 +55,7 @@ function setup() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    }
+    };
 
 function draw() {
 
@@ -92,7 +92,7 @@ function draw() {
         lava1();
         lava2();
         lava3();
-}
+};
 
 function heart() {
 
@@ -109,9 +109,9 @@ function heart() {
 
     if(bool=1) {
     black;
-    } else {
+    }; else {
     pink;
-    }
+    };
 
 };
 
@@ -133,4 +133,4 @@ function potato() {
          ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
          ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
          ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
-}
+};
