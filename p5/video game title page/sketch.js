@@ -26,7 +26,7 @@ Lucca*/
 function setup() {
 
     createCanvas(400, 400);
-};
+}
 
 function draw() {
 
@@ -63,12 +63,12 @@ function draw() {
         lava1();
         lava2();
         lava3();
-};
+}
 
 // Lava Functions
 
     function lava0() {
-    };
+    }
 
     function lava1() {
 
@@ -76,7 +76,7 @@ function draw() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    };
+    }
 
     function lava2() {
 
@@ -84,7 +84,7 @@ function draw() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    };
+    }
 
     function lava3() {
 
@@ -92,7 +92,7 @@ function draw() {
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
         lavaY+=1;
-    };
+    }
 
 
 function heart() {
@@ -114,7 +114,7 @@ function heart() {
     pink;
     };
 
-};
+}
 
 function potato() {
 
@@ -134,4 +134,4 @@ function potato() {
          ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
          ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
          ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
-};
+}
