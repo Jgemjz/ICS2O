@@ -64,9 +64,9 @@ function heart() {
     triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 
     if(bool=1) {
-    black
+    black;
     } else {
-    pink
+    pink;
     }
     
 };
