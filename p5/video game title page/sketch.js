@@ -28,6 +28,35 @@ function setup() {
     createCanvas(400, 400);
 }
 
+// Lava Functions
+
+    function lava0 = () {
+    }
+
+    function lava1 = () {
+        
+        fill(255, 0, 0);
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
+
+    function lava2 = () {
+        
+        fill(255, 0, 0);
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
+
+    function lava3 = () {
+        
+        fill(255, 0, 0);
+        ellipse(lavaX, lavaY, lavaSize, lavaSize);
+        
+        lavaY+=1;
+    }
+
 function draw() {
 
     // Background
@@ -64,35 +93,6 @@ function draw() {
         lava2();
         lava3();
 }
-
-// Lava Functions
-
-    function lava0 = () {
-    }
-
-    function lava1 = () {
-        
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
-        lavaY+=1;
-    }
-
-    function lava2 = () {
-        
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
-        lavaY+=1;
-    }
-
-    function lava3 = () {
-        
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-        
-        lavaY+=1;
-    }
 
 function heart() {
     
