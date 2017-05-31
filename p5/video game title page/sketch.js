@@ -20,7 +20,7 @@ Lucca*/
 
         var tX = 200;
         var tY = 200;
-        var bool = 1;
+        var bool = 2;
 
 function setup() {
 
