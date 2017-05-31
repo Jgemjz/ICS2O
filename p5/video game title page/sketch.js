@@ -94,7 +94,7 @@ function draw() {
     }
 
 function heart() {
-
+    
    // noStroke();
     if(bool==1) {
     fill(0, 0, 0);
@@ -104,6 +104,7 @@ function heart() {
     triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
     triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
     triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+    ellipse(tX, tY, 30,30);
 }
 
 function potato() {
