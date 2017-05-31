@@ -12,7 +12,7 @@ Lucca*/
 
     // Lava
 
-        var lavaX = random(5, 395);
+        var lavaX = round(random(5, 395));
         var lavaY = -30;
         var lavaSize = 50;
 
@@ -103,9 +103,9 @@ function heart() {
 
     if(bool==1) {
     fill(0, 0, 0);
-    }; else {
+    } else {
     fill(215, 77, 222);
-    };
+    }
 
 }
 
@@ -126,5 +126,5 @@ function potato() {
          fill(168, 161, 65);
          ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
          ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
-         ellipse(mouseX+-4, mouseY+7, potatoSpot, potatoSpot);
+         ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
 }
