@@ -49,12 +49,12 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Calls
-
-        tX=200;
+        tY = 200;
+        tX = 200;
         heart();
-        tX=228;
+        tX = 228;
         heart();
-        tX=256;
+        tX = 256;
         heart();
         potato();
 
