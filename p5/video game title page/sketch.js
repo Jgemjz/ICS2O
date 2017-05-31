@@ -20,7 +20,7 @@ Lucca*/
 
         var tX = 200;
         var tY = 200;
-        var bool = 2;
+        var bool = 1;
 
 function setup() {
 
@@ -98,14 +98,18 @@ function heart() {
     noStroke();
 
     if(bool==1) {
+        
         fill(0, 0, 0);
+        triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+        triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+        triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     } else {
+        
         fill(215, 77, 222);
+        triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+        triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+        triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     }
-
-    triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-    triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-    triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 
 }
 
