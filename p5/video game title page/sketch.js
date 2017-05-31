@@ -95,7 +95,7 @@ function draw() {
 
 function heart() {
 
-    noStroke();
+   // noStroke();
     if(bool==1) {
     fill(0, 0, 0);
     } else {
