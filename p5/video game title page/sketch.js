@@ -49,6 +49,11 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Calls
+    
+        lava1();
+        lava2();
+        lava3();
+    
         tY = 200;
         tX = 200;
         heart();
@@ -57,10 +62,6 @@ function draw() {
         tX = 256;
         heart();
         potato();
-
-        lava1();
-        lava2();
-        lava3();
 }
 
 // Lava Functions
