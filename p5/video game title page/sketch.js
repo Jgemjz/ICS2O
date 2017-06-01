@@ -82,7 +82,7 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
-        lavaY+=1;
+        lavaY=lavaY+1;
     }
 
     function lava3() {
