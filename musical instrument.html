@@ -13,6 +13,68 @@
 		
 		<p>My instument had three buttons (switches) that each make similar but different tunes when pressed.</p>
 		
+		<h2>My Code</h2>
+		
+		<p>Here's the code I wrote to create my instruments circuit:</p>
+		
+		<pre>
+		
+		
+		
+/*Musical Instrument Assignment
+2017-05-25 to 2017-06-01
+Lucca*/
+
+//Variables
+
+  int switch1 = 2;
+  int switch2 = 3;
+  int switch3 = 4;
+  int speaker = 9;
+
+void setup() {
+
+  pinMode(switch1, INPUT);
+  pinMode(switch2, INPUT);
+  pinMode(switch3, INPUT);
+}
+
+void loop() {
+  
+  // Calls
+
+    tune1();
+    tune2();
+    tune3();
+}
+
+void tune1 () {
+
+    if (digitalRead(switch1)==HIGH) {
+    tone(speaker, 200, 30);
+    delay(30);
+    } 
+}
+
+void tune2 () {
+
+    if (digitalRead(switch2)==HIGH) {
+    tone(speaker, 240, 30);
+    delay(30);
+    }
+} 
+
+void tune3 () {
+
+    if (digitalRead(switch3)==HIGH) {
+    tone(speaker, 280, 30);
+    delay(30);
+    } 
+}	
+
+
+		</pre>
+		
 	</body>
 
 </html>
