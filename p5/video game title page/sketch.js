@@ -58,7 +58,6 @@ function draw() {
         heart();
         potato();
 
-        lava0();
         lava1();
         lava2();
         lava3();
@@ -66,15 +65,12 @@ function draw() {
 
 // Lava Functions
 
-    function lava0() {
-    }
-
     function lava1() {
 
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
-        lavaY+=1;
+        lavaY+=3;
     }
 
     function lava2() {
@@ -82,7 +78,7 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
-        lavaY=lavaY+1;
+        lavaY+=3;
     }
 
     function lava3() {
@@ -90,7 +86,7 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
 
-        lavaY+=1;
+        lavaY+=3;
     }
 
 function heart() {
