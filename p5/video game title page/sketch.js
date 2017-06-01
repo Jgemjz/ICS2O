@@ -12,7 +12,7 @@ Lucca*/
 
     // Lava
 
-        var lavaX = round(random(5, 395));
+        var lavaX = random(5, 395);
         var lavaY = -30;
         var lavaSize = 50;
 
