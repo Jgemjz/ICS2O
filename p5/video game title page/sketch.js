@@ -52,7 +52,7 @@ function setup() {
             lavaX[i] = random(5, 395);
             lavaY[i] = -30+random(2, 5);
         }
-    
+
     lavaSize = 60;
 }
 
