@@ -78,7 +78,7 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Lava Stuff (Working On)
-    
+
         lavaX[0]+random(5, 395);
         lavaX[1]+random(5, 395);
         lavaX[2]+random(5, 395);
