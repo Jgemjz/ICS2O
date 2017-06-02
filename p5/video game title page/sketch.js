@@ -62,7 +62,7 @@ function draw() {
         lava1();
         lava2();
         lava3();
-}
+};
 
 // Lava Functions
 
