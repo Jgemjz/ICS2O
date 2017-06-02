@@ -59,10 +59,10 @@ function draw() {
         heart();
         potato();
 
-        lavaY=lavaY+3;
         lava1();
         lava2();
         lava3();
+        lavaY=lavaY+3;
 }
 
 // Lava Functions
