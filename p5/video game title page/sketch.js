@@ -53,7 +53,7 @@ function setup() {
             lavaY[i] = -30+random(2, 5);
         }
     
-    lavaSize = 50;
+    lavaSize = 60;
 }
 
 function draw() {
@@ -77,6 +77,16 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
+    // Lava Stuff (Working On)
+    
+        lavaX[0];
+        lavaX[1];
+        lavaX[2];
+
+        lavaY[0];
+        lavaY[1];
+        lavaY[2];
+    
     // Calls
 
         tY = 200;
