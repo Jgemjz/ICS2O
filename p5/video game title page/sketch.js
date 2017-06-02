@@ -32,12 +32,10 @@ Lucca*/
                 ellipse(lavaX, lavaY, lavaSize, lavaSize);
             }
 
-        var lava = [lava1, lava2, lava3];
-        var lavaX;
-        var lavaY;
+        var lavaX = [10, 20, 30];
+        var lavaY = [-30+random(2, 5);, -30+random(2, 5); -30+random(2, 5);];
         var lavaSize;
-        var speed = lavaY = lavaY+random(2, 6);
-
+        
     // Hearts
 
         var tX = 200;
@@ -47,8 +45,14 @@ Lucca*/
 function setup() {
 
     createCanvas(400, 400);
-    lavaX = random(5, 395);
-    lavaY = -30;
+    
+    // For Loop
+    
+        for (var i=0; i<3; i++) {
+            lavaX[i] = random(5, 395);
+            lavaY[i] = -30+random(2, 5);
+        }
+    
     lavaSize = 50;
 }
 
