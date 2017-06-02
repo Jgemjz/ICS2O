@@ -12,9 +12,37 @@ Lucca*/
 
     // Lava
 
+        // Lava Functions
+
+            function lava1() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX, lavaY, lavaSize, lavaSize);
+
+                lavaY = lavaY+random(2, 6);
+            }
+
+            function lava2() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX, lavaY, lavaSize, lavaSize);
+
+                lavaY = lavaY+random(2, 6);
+            }
+
+            function lava3() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX, lavaY, lavaSize, lavaSize);
+
+                lavaY = lavaY+random(2, 6);
+            }
+
+        var lava = [lava1, lava2, lava3];
         var lavaX;
         var lavaY;
         var lavaSize;
+        var speed = lavaY = lavaY+random(2, 6);
 
     // Hearts
 
@@ -67,32 +95,6 @@ function draw() {
         lava3();
 }
 
-// Lava Functions
-
-    function lava1() {
-
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-
-        lavaY = lavaY+random(2, 6);
-    }
-
-    function lava2() {
-
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-
-        lavaY = lavaY+random(2, 6);
-    }
-
-    function lava3() {
-        
-        fill(255, 0, 0);
-        ellipse(lavaX, lavaY, lavaSize, lavaSize);
-
-        lavaY = lavaY+random(2, 6);
-    }
-
 function heart() {
 
     noStroke();
@@ -110,6 +112,12 @@ function heart() {
     }
 
 }
+
+// TESTING TESTING LAVA
+
+    lava[0]=lava[0]+speed;
+    lava[1]=lava[1]+speed;
+    lava[2]=lava[2]+speed;
 
 function potato() {
 
