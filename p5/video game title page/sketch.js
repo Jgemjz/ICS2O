@@ -12,9 +12,9 @@ Lucca*/
 
     // Lava
 
-        var lavaX = random(5, 395);
-        var lavaY = -30;
-        var lavaSize = 50;
+        var lavaX;
+        var lavaY;
+        var lavaSize;
 
     // Hearts
 
@@ -25,6 +25,9 @@ Lucca*/
 function setup() {
 
     createCanvas(400, 400);
+    lavaX = random(5, 395);
+    lavaY = -30;
+    lavaSize = 50;
 }
 
 function draw() {
