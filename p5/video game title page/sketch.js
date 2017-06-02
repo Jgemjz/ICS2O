@@ -47,7 +47,7 @@ function setup() {
     createCanvas(400, 400);
     
     // For Loop
-    
+
         for (var i=0; i<3; i++) {
             lavaX[i] = random(5, 395);
             lavaY[i] = -30+random(2, 5);
