@@ -2,7 +2,7 @@
 2017-04-23 To 2017-06-01
 Lucca*/
 
-// Golbal Varaibles
+// GlObAl vAraIblEs
 
     // Potato
 
@@ -74,7 +74,8 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
         
-        lavaY=lavaY+3;
+        lavaX = random(5, 395);
+        lavaY = lavaY+3;
     }
 
     function lava2() {
@@ -82,7 +83,8 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
         
-        lavaY=lavaY+3;
+        lavaX = random(5, 395);
+        lavaY = lavaY+3;
     }
 
     function lava3() {
@@ -90,7 +92,8 @@ function draw() {
         fill(255, 0, 0);
         ellipse(lavaX, lavaY, lavaSize, lavaSize);
         
-        lavaY=lavaY+3;
+        lavaX = random(5, 395);
+        lavaY = lavaY+3;
     }
 
 function heart() {
