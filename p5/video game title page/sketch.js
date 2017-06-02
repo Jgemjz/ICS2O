@@ -33,7 +33,7 @@ Lucca*/
             }
 
         var lavaX = [10, 20, 30];
-        var lavaY = [-30+random(2, 5);, -30+random(2, 5); -30+random(2, 5);];
+        var lavaY = [-30+random(2, 5), -30+random(2, 5), -30+random(2, 5)];
         var lavaSize;
         
     // Hearts
