@@ -15,7 +15,7 @@ Lucca*/
         var lavaX = [10, 20, 30];
         var lavaY = [-30, -30, -30];
         var lavaSize;
-        var speed = [3, 4, 5];
+        var speed = [2, 3, 4];
 
     // Hearts
 
@@ -32,12 +32,9 @@ function setup() {
         for (var Q=0; Q<3; Q++) {
             lavaX[Q] = random(5, 395);
             lavaY[Q] = -30;
+            speed[Q] = random(2, 5);
         }
         
-        for (var Q=0; Q<3; Q++) {
-            speed[Q]
-        }
-    
     lavaSize = 60;
 }
 
@@ -65,7 +62,7 @@ function draw() {
     // For Loop
     
         for (var Q=0; Q<3; Q++) {
-          lavaY[Q]=lavaY[Q]+speed;
+          lavaY[Q]=lavaY[Q]+speed[Q];
         }
     
     // CALLS
