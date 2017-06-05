@@ -2,7 +2,7 @@
 2017-04-23 To 2017-06-01
 Lucca*/
 
-// GloBaL vAraIblEs
+// GloBaL vArIaBleS
 
     // Potato
 
@@ -11,6 +11,7 @@ Lucca*/
         var potatoSpot = 5;
 
     // Lava
+
         var lavaX = [10, 20, 30];
         var lavaY = [-30, -30, -30];
         var lavaSize;
@@ -67,7 +68,7 @@ function draw() {
           lavaY[Q]=lavaY[Q]+speed;
         }
     
-    // Calls
+    // CALLS
 
         tY = 200;
         tX = 200;
@@ -102,25 +103,25 @@ function heart() {
 
 }
 
-        // Lava Functions
+// Lava Functions
 
-function lava1() {
+    function lava1() {
 
-                fill(255, 0, 0);
-                ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
-}
+        fill(255, 0, 0);
+        ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+    }
 
-function lava2() {
+    function lava2() {
 
-                fill(255, 0, 0);
-                ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
-}
+        fill(255, 0, 0);
+        ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+    }
 
-function lava3() {
+    function lava3() {
 
-                fill(255, 0, 0);
-                ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
-}
+        fill(255, 0, 0);
+        ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+    }
 
 function potato() {
 
