@@ -1,5 +1,5 @@
-/*Potato Dodge Game
-2017-04-23 To 2017-06-01
+/*Potato Dodge Video Game
+2017-04-23 To 2017-06-05
 Lucca*/
 
 // GloBaL vArIaBleS
@@ -27,7 +27,7 @@ function setup() {
 
     createCanvas(400, 400);
 
-    // For Loop
+    // For Loops
     
         for (var Q=0; Q<3; Q++) {
             lavaX[Q] = random(5, 395);
