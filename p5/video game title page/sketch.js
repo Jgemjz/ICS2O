@@ -11,30 +11,10 @@ Lucca*/
         var potatoSpot = 5;
 
     // Lava
-
-        // Lava Functions
-
-            function lava1() {
-
-                fill(255, 0, 0);
-                ellipse(lavaX, lavaY, lavaSize, lavaSize);
-            }
-
-            function lava2() {
-
-                fill(255, 0, 0);
-                ellipse(lavaX, lavaY, lavaSize, lavaSize);
-            }
-
-            function lava3() {
-
-                fill(255, 0, 0);
-                ellipse(lavaX, lavaY, lavaSize, lavaSize);
-            }
-
         var lavaX = [10, 20, 30];
         var lavaY = [-30, -30, -30];
         var lavaSize;
+        var speed = 2;
         
     // Hearts
 
@@ -78,14 +58,9 @@ function draw() {
         line(308, 40, 374, 40);
 
     // Lava Stuff (Working On)
-
-        lavaX[0]+random(5, 395);
-        lavaX[1]+random(5, 395);
-        lavaX[2]+random(5, 395);
- 
-        lavaY[0]+random(2, 5);
-        lavaY[1]+random(2, 5);
-        lavaY[2]+random(2, 5);
+    for (var j = 0; j<3; j++) {
+      lavaY[j]=lavaY[j]+speed;
+    }
     
     // Calls
 
@@ -97,6 +72,11 @@ function draw() {
         tX = 256;
         heart();
         potato();
+    
+    
+// TESTING LAVA
+
+   
 
         lava1();
         lava2();
@@ -123,11 +103,25 @@ function heart() {
 
 }
 
-// TESTING LAVA
+        // Lava Functions
 
-    lava[0]=lava[0]+speed;
-    lava[1]=lava[1]+speed;
-    lava[2]=lava[2]+speed;
+function lava1() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+}
+
+function lava2() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+}
+
+function lava3() {
+
+                fill(255, 0, 0);
+                ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+}
 
 function potato() {
 
