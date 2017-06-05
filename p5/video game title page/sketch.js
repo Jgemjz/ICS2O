@@ -14,8 +14,8 @@ Lucca*/
         var lavaX = [10, 20, 30];
         var lavaY = [-30, -30, -30];
         var lavaSize;
-        var speed = 2;
-        
+        var speed = [3, 4, 5];
+
     // Hearts
 
         var tX = 200;
@@ -25,14 +25,18 @@ Lucca*/
 function setup() {
 
     createCanvas(400, 400);
-    
+
     // For Loop
-
-        for (var i=0; i<3; i++) {
-            lavaX[i] = random(5, 395);
-            lavaY[i] = -30+random(2, 5);
+    
+        for (var Q=0; Q<3; Q++) {
+            lavaX[Q] = random(5, 395);
+            lavaY[Q] = -30;
         }
-
+        
+        for (var Q=0; Q<3; Q++) {
+            speed[Q]
+        }
+    
     lavaSize = 60;
 }
 
@@ -57,10 +61,11 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
-    // Lava Stuff (Working On)
-    for (var j = 0; j<3; j++) {
-      lavaY[j]=lavaY[j]+speed;
-    }
+    // For Loop
+    
+        for (var Q=0; Q<3; Q++) {
+          lavaY[Q]=lavaY[Q]+speed;
+        }
     
     // Calls
 
@@ -72,12 +77,6 @@ function draw() {
         tX = 256;
         heart();
         potato();
-    
-    
-// TESTING LAVA
-
-   
-
         lava1();
         lava2();
         lava3();
@@ -94,7 +93,7 @@ function heart() {
         triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
         triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     } else { 
-        
+
         fill(215, 77, 222);
         triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
         triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
