@@ -2,7 +2,7 @@
 2017-04-23 To 2017-06-01
 Lucca*/
 
-// GlObAl vAraIblEs
+// GloBaL vAraIblEs
 
     // Potato
 
