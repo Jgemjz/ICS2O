@@ -2,8 +2,6 @@
 2017-04-23 To 2017-06-06
 Lucca*/
 
-// I've Got to make it so if function potato collides with a lava ball a heart goes black.
-
 // GloBaL vArIaBleS
 
     // Potato
@@ -31,17 +29,8 @@ Lucca*/
         var hitBoxY = 1;
 
     // Heart colours
-    var redH = color(215, 77, 222);
-    var blackH = color(0,0,0);
-      
-//TESTING TESTING!!!!!
-
-    /*
-    Bool=0 means you have all hearts.
-    bool=1 means you've lost one heart.
-    bool=2 means you've lost two hearts.
-    bool=3 means you've lost three hearts.
-    */
+        var redH = color(215, 77, 222);
+        var blackH = color(0,0,0);
 
 function setup() {
 
@@ -126,6 +115,7 @@ function draw() {
             }
 
             noStroke();
+            tX=tX+128
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
@@ -151,6 +141,7 @@ function draw() {
             }
 
             noStroke();
+            tX=tX+156
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
