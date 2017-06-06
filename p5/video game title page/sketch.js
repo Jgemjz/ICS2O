@@ -63,8 +63,8 @@ function draw() {
     
         for (var Q=0; Q<3; Q++) {
               lavaY[Q]=lavaY[Q]+speed[Q];
-              if (lavaY>400) {
-                  lavaY=-30;
+              if (lavaY[Q]>400) {
+                  lavaY[Q]=-30;
               }
         }
     
