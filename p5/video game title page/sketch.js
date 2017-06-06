@@ -59,6 +59,12 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
+    // If Statement
+    
+        if(tY>400) {
+        tY=-30;
+        }
+
     // For Loop
     
         for (var Q=0; Q<3; Q++) {
