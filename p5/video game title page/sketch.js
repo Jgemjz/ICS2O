@@ -65,6 +65,7 @@ function draw() {
               lavaY[Q]=lavaY[Q]+speed[Q];
               if (lavaY[Q]>400) {
                   lavaY[Q]=-30;
+                  lavaX[Q]=random(5, 395);
               }
         }
     
