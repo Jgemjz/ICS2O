@@ -29,7 +29,11 @@ Lucca*/
 
         var hitBoxX = 1;
         var hitBoxY = 1;
-        
+
+    // Heart colours
+    var redH = color(215, 77, 222);
+    var blackH = color(0,0,0);
+      
 //TESTING TESTING!!!!!
 
     /*
@@ -89,38 +93,92 @@ function draw() {
 
         tY = 200;
         tX = 200;
-        heart();
-        tX = 228;
-        heart();
-        tX = 256;
-        heart();
+    
+        heart1();
+        heart2();
+        heart3();
+    
         potato();
+    
         lava1();
         lava2();
         lava3();
 }
 
-function heart() {
+// Heart Functions
 
-    noStroke();
+    function heart1() {
 
-    if (bool==0) {
-        
-        fill(215, 77, 222);
-        triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-        triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-        triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+            if (bool = 0) 
+            fill(redH);
+            }
+
+            if (bool = 1) 
+            fill(blackH);
+            }
+
+            if (bool = 2) 
+            fill(blackH);
+            }
+
+            if (bool = 3) 
+            fill(blackH);
+            }
+
+            noStroke();
+            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+
     }
-    
-    if (bool==1) {
-        fill(0, 0, 0);
-        triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-        fill(215, 77, 222);
-        triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-        triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+
+    function heart2() {
+
+            if (bool = 0) 
+            fill(redH);
+            }
+
+            if (bool = 1) 
+            fill(redH);
+            }
+
+            if (bool = 2) 
+            fill(blackH);
+            }
+
+            if (bool = 3) 
+            fill(blackH);
+            }
+
+            noStroke();
+            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     }
 
-}
+    function heart3() {
+
+            if (bool = 0) 
+            fill(redH);
+            }
+
+            if (bool = 1) 
+            fill(redH);
+            }
+
+            if (bool = 2) 
+            fill(redH);
+            }
+
+            if (bool = 3) 
+            fill(blackH);
+            }
+
+            noStroke();
+            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+    }
 
 // Lava Functions
 
