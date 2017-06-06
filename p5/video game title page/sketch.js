@@ -1,6 +1,8 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-05
+2017-04-23 To 2017-06-06
 Lucca*/
+
+// I've Got to make it so if function potato collides with a lava ball a heart goes black.
 
 // GloBaL vArIaBleS
 
@@ -21,7 +23,26 @@ Lucca*/
 
         var tX = 200;
         var tY = 200;
-        var bool = 2;
+        var bool = 1;
+
+    // HitBoxes
+
+        var hitBoxX = 1;
+        var hitBoxY = 1;
+        
+//TESTING TESTING!!!!!
+
+    /*
+    Bool=0 means you have all hearts.
+    bool=1 means you've lost one heart.
+    bool=2 means you've lost two hearts.
+    bool=3 means you've lost three hearts.
+    */
+
+    if (hitBoxX==mouseX) {
+       bool=2;
+    }
+
 
 function setup() {
 
@@ -65,7 +86,7 @@ function draw() {
               if (lavaY[Q]>400) {
                   lavaY[Q]=-30;
                   lavaX[Q]=random(5, 395);
-                  speed[Q]=random(2, 5);
+                  speed[Q]=random(3, 5);
               }
         }
     
@@ -88,7 +109,7 @@ function heart() {
 
     noStroke();
 
-    if(bool==1) {
+    if(hitBox==1) {
         
         fill(0, 0, 0);
         triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
