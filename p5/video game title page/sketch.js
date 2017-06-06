@@ -30,7 +30,7 @@ Lucca*/
 
     // Heart colours
         var redH = color(215, 77, 222);
-        var blackH = color(0,0,0);
+        var blackH = color(0, 0, 0);
 
 function setup() {
 
@@ -115,7 +115,7 @@ function draw() {
             }
 
             noStroke();
-            tX=tX+128
+            tX=tX+128;
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
@@ -141,7 +141,7 @@ function draw() {
             }
 
             noStroke();
-            tX=tX+156
+            tX=tX+156;
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
@@ -166,6 +166,7 @@ function draw() {
             }
 
             noStroke();
+            tX=tX+156;
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
