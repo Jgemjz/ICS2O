@@ -32,7 +32,6 @@ function setup() {
         for (var Q=0; Q<3; Q++) {
             lavaX[Q] = random(5, 395);
             lavaY[Q] = -30;
-            speed[Q] = random(2, 5);
         }
         
     lavaSize = 60;
