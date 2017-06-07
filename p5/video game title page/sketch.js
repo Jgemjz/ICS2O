@@ -29,6 +29,7 @@ Lucca*/
         var hitBoxY = 1;
 
     // Heart colours
+
         var redH = color(215, 77, 222);
         var blackH = color(0, 0, 0);
 
