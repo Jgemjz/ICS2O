@@ -98,19 +98,19 @@ function draw() {
 
     function heart1() {
 
-            if (bool = 0) 
+            if (bool = 0) {
             fill(redH);
             }
 
-            if (bool = 1) 
+            if (bool = 1) {
             fill(blackH);
             }
 
-            if (bool = 2) 
+            if (bool = 2) {
             fill(blackH);
             }
 
-            if (bool = 3) 
+            if (bool = 3) {
             fill(blackH);
             }
 
@@ -124,19 +124,19 @@ function draw() {
 
     function heart2() {
 
-            if (bool = 0) 
+            if (bool = 0) {
             fill(redH);
             }
 
-            if (bool = 1) 
+            if (bool = 1) {
             fill(redH);
             }
 
-            if (bool = 2) 
+            if (bool = 2) {
             fill(blackH);
             }
 
-            if (bool = 3) 
+            if (bool = 3) {
             fill(blackH);
             }
 
@@ -149,19 +149,19 @@ function draw() {
 
     function heart3() {
 
-            if (bool = 0) 
+            if (bool = 0) {
             fill(redH);
             }
 
-            if (bool = 1) 
+            if (bool = 1) {
             fill(redH);
             }
 
-            if (bool = 2) 
+            if (bool = 2) {
             fill(redH);
             }
 
-            if (bool = 3) 
+            if (bool = 3) {
             fill(blackH);
             }
 
