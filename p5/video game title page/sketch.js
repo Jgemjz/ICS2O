@@ -1,5 +1,5 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-07
+2017-04-23 To 2017-06-08
 Lucca*/
 
 // GloBaL vArIaBleS
@@ -21,7 +21,7 @@ Lucca*/
 
         var tX = 200;
         var tY = 200;
-        var bool = 1;
+        var bool = 0;
 
     // HitBoxes
 
@@ -30,14 +30,14 @@ Lucca*/
 
     // Heart colours
 
-        var redH = color(215, 77, 222);
-        var blackH = color(0, 0, 0);
+        var redH;
+        var blackH;
 
 function setup() {
 
     createCanvas(400, 400);
 
-    // For Loops
+    // For Loop
     
         for (var Q=0; Q<3; Q++) {
             lavaX[Q] = random(5, 395);
@@ -45,6 +45,7 @@ function setup() {
         }
         
     lavaSize = 60;
+	bool = 0;
 }
 
 function draw() {
@@ -81,6 +82,10 @@ function draw() {
     
     // CALLS
 
+		redH = color(215, 77, 222);
+		blackH = color(0, 0, 0);
+		
+
         tY = 200;
         tX = 200;
     
@@ -95,28 +100,50 @@ function draw() {
         lava3();
 }
 
+// If A Ball Is Hit
+
+	if ((mouseX >= (lavaX[0] - lavaSize/2))
+		&& (mouseX <= (lavaX[0] + lavaSize/2))
+		&& (mouseY >= (lavaY[0] - lavaSize/2))
+		&& (mouseY <= (lavaY[0] + lavaSize/2))) {
+		bool = bool+1;
+	}
+	
+	if ((mouseX >= (lavaX[1] - lavaSize/2))
+		&& (mouseX <= (lavaX[1] + lavaSize/2))
+		&& (mouseY >= (lavaY[1] - lavaSize/2))
+		&& (mouseY <= (lavaY[1] + lavaSize/2))) {
+		bool = bool+1;
+	}
+	
+	if ((mouseX >= (lavaX[2] - lavaSize/2))
+		&& (mouseX <= (lavaX[2] + lavaSize/2))
+		&& (mouseY >= (lavaY[2] - lavaSize/2))
+		&& (mouseY <= (lavaY[2] + lavaSize/2))) {
+		bool = bool+1;
+	}
+	
 // Heart Functions
 
     function heart1() {
 
-            if (bool = 0) {
+            if (bool == 0) {
             fill(redH);
             }
 
-            if (bool = 1) {
+            if (bool == 1) {
             fill(blackH);
             }
 
-            if (bool = 2) {
+            if (bool == 2) {
             fill(blackH);
             }
 
-            if (bool = 3) {
+            if (bool == 3) {
             fill(blackH);
             }
 
             noStroke();
-            tX=tX+28;
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
@@ -125,19 +152,19 @@ function draw() {
 
     function heart2() {
 
-            if (bool = 0) {
+            if (bool == 0) {
             fill(redH);
             }
 
-            if (bool = 1) {
+            if (bool == 1) {
             fill(redH);
             }
 
-            if (bool = 2) {
+            if (bool == 2) {
             fill(blackH);
             }
 
-            if (bool = 3) {
+            if (bool == 3) {
             fill(blackH);
             }
 
@@ -150,24 +177,24 @@ function draw() {
 
     function heart3() {
 
-            if (bool = 0) {
+            if (bool == 0) {
             fill(redH);
             }
 
-            if (bool = 1) {
+            if (bool == 1) {
             fill(redH);
             }
 
-            if (bool = 2) {
+            if (bool == 2) {
             fill(redH);
             }
 
-            if (bool = 3) {
+            if (bool == 3) {
             fill(blackH);
             }
 
             noStroke();
-            tX=tX+56;            
+            tX=tX+28;            
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
