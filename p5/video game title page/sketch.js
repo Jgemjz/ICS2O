@@ -37,15 +37,7 @@ function setup() {
 
     createCanvas(400, 400);
 
-    // For Loop
-    
-        for (var Q=0; Q<3; Q++) {
-            lavaX[Q] = random(5, 395);
-            lavaY[Q] = -30;
-        }
-        
-    lavaSize = 60;
-	bool = 0;
+    restart();
 }
 
 function draw() {
@@ -98,7 +90,9 @@ function draw() {
         lava1();
         lava2();
         lava3();
-}
+		
+		yourLose();
+		delay();
 
 // If A Ball Is Hit
 
@@ -122,26 +116,27 @@ function draw() {
 		&& (mouseY <= (lavaY[2] + lavaSize/2))) {
 		bool = bool+1;
 	}
-	
+}
+
 // Heart Functions
 
     function heart1() {
 
             if (bool == 0) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 1) {
-            fill(blackH);
+				fill(blackH);
             }
 
             if (bool == 2) {
-            fill(blackH);
+				fill(blackH);
             }
 
             if (bool == 3) {
-            fill(blackH);
-            }
+				fill(blackH);
+            } 
 
             noStroke();
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
@@ -166,7 +161,7 @@ function draw() {
 
             if (bool == 3) {
             fill(blackH);
-            }
+            } 
 
             noStroke();
             tX=tX+28;
@@ -191,7 +186,7 @@ function draw() {
 
             if (bool == 3) {
             fill(blackH);
-            }
+            } 
 
             noStroke();
             tX=tX+28;            
@@ -200,24 +195,81 @@ function draw() {
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     }
 
+	function delay(){
+		
+		if (bool == 1) {
+			
+			lavaX[0]=100;
+			lavaX[1]=200;
+			lavaX[2]=300;
+			
+			lavaY[0]=-100;
+			lavaY[1]=-100;
+			lavaY[2]=-100;
+		}
+	}
+	
+	
 // Lava Functions
 
     function lava1() {
 
         fill(255, 0, 0);
         ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+		
+		if (bool == 1) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
+		
+		if (bool == 2) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
     }
 
     function lava2() {
 
         fill(255, 0, 0);
         ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+		
+		if (bool == 1) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
+		
+		if (bool == 2) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
     }
 
     function lava3() {
 
         fill(255, 0, 0);
         ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+		
+		if (bool == 1) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
+		
+		if (bool == 2) {
+
+			lavaY[0]=random(3, 5);
+			lavaY[1]=random(3, 5);
+			lavaY[2]=random(3, 5);
+		}
     }
 
 function potato() {
@@ -239,3 +291,24 @@ function potato() {
          ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
          ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
 }
+
+function restart() {
+	
+	// For Loop
+    
+        for (var Q=0; Q<3; Q++) {
+            lavaX[Q] = random(5, 395);
+            lavaY[Q] = -30;
+        }
+        
+    lavaSize = 60;
+	bool = 0;
+}
+
+function yourLose () {
+	
+	 if (bool == 3) {
+		 textSize(40);
+		 text("YourLose!!!", 80, 200);
+	 }
+ }
