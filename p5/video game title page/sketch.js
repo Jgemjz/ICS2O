@@ -35,9 +35,32 @@ Lucca*/
 
 function setup() {
 
-    createCanvas(400, 400);
+	createCanvas(400, 400);
 
-    restart();
+	// For Loop
+    
+		for (var Q=0; Q<3; Q++) {
+		    lavaX[Q] = random(5, 395);
+		    lavaY[Q] = -30;
+		}
+        
+    	lavaSize = 60;
+	bool = 0;
+	
+	if (bool == 1) {
+			
+			lavaX[0]=100;
+			lavaX[1]=200;
+			lavaX[2]=300;
+			
+			lavaY[0]=-100;
+			lavaY[1]=-100;
+			lavaY[2]=-100;
+			
+				lavaY[0]=lavaY[0]+1;
+				lavaY[1]=lavaY[1]+1;
+				lavaY[2]=lavaY[2]+1;
+		}
 }
 
 function draw() {
@@ -195,25 +218,6 @@ function draw() {
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
     }
 
-	function delay(){
-		
-		if (bool == 1) {
-			
-			lavaX[0]=100;
-			lavaX[1]=200;
-			lavaX[2]=300;
-			
-			lavaY[0]=-100;
-			lavaY[1]=-100;
-			lavaY[2]=-100;
-			
-				lavaY[0]=lavaY[0]+1;
-				lavaY[1]=lavaY[1]+1;
-				lavaY[2]=lavaY[2]+1;
-		}
-	}
-	
-	
 // Lava Functions
 
     function lava1() {
@@ -294,19 +298,6 @@ function potato() {
          ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
          ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
          ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
-}
-
-function restart() {
-	
-	// For Loop
-    
-        for (var Q=0; Q<3; Q++) {
-            lavaX[Q] = random(5, 395);
-            lavaY[Q] = -30;
-        }
-        
-    lavaSize = 60;
-	bool = 0;
 }
 
 function endScreen() {
