@@ -2,6 +2,17 @@
 2017-04-23 To 2017-06-09
 Lucca*/
 
+/*
+	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
+	I'll do this...
+	
+		if (bool ==-1) {
+			startScreen();
+		}
+
+	I could make a button at the "game Over" screen that if it's pressed bool is -1 (starts Over).
+*/
+
 // GloBaL vArIaBleS
 
     // Potato
@@ -37,30 +48,12 @@ function setup() {
 
 	createCanvas(400, 400);
 
-	// For Loop
-    
-		for (var Q=0; Q<3; Q++) {
-		    lavaX[Q] = random(5, 395);
-		    lavaY[Q] = -30;
-		}
-        
-    	lavaSize = 60;
-	bool = 0;
+	// every time the the lava is drawn it starts at the top
 	
-	if (bool == 1) {
-			
-			lavaX[0]=100;
-			lavaX[1]=200;
-			lavaX[2]=300;
-			
-			lavaY[0]=-100;
-			lavaY[1]=-100;
-			lavaY[2]=-100;
-			
-				lavaY[0]=lavaY[0]+1;
-				lavaY[1]=lavaY[1]+1;
-				lavaY[2]=lavaY[2]+1;
-		}
+		lavaAtTop();
+		
+    	lavaSize = 60;
+		bool = 0;
 }
 
 function draw() {
@@ -84,7 +77,7 @@ function draw() {
         strokeWeight(1);
         line(308, 40, 374, 40);
 
-    // For Loop
+    // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
         for (var Q=0; Q<3; Q++) {
               lavaY[Q]=lavaY[Q]+speed[Q];
@@ -97,49 +90,49 @@ function draw() {
     
     // CALLS
 
-		redH = color(255, 100, 100);
+		redH = color(255, 0, 0);
 		blackH = color(0, 0, 0);
-		
 
         tY = 200;
         tX = 200;
-    
+
         heart1();
         heart2();
         heart3();
-    
+
         potato();
-    
+
         lava1();
         lava2();
         lava3();
 		
-	endScreen();
+// ball hitboxes/increasing "bool"
 
-// If A Ball Is Hit
-
-	if ((mouseX >= (lavaX[0] - lavaSize/2))
-		&& (mouseX <= (lavaX[0] + lavaSize/2))
-		&& (mouseY >= (lavaY[0] - lavaSize/2))
-		&& (mouseY <= (lavaY[0] + lavaSize/2))) {
-		bool = bool+1;
+	for (var Q=0; Q<3; Q++) {
+		if ((mouseX >= (lavaX[Q] - lavaSize/2))
+			&& (mouseX <= (lavaX[Q] + lavaSize/2))
+			&& (mouseY >= (lavaY[Q] - lavaSize/2))
+			&& (mouseY <= (lavaY[Q] + lavaSize/2))) {
+			bool = bool+1;
+			lavaAtTop();
+		}	
+		
+		if (bool >= 3) {
+			endScreen();
+		}
 	}
 	
-	if ((mouseX >= (lavaX[1] - lavaSize/2))
-		&& (mouseX <= (lavaX[1] + lavaSize/2))
-		&& (mouseY >= (lavaY[1] - lavaSize/2))
-		&& (mouseY <= (lavaY[1] + lavaSize/2))) {
-		bool = bool+1;
+} // End of Draw Function!!!
+
+	function lavaAtTop() {
+		
+		for (var Q=0; Q<3; Q++) {
+		    lavaX[Q] = random(5, 395);
+			lavaY[Q]=-30;
+			
+		}
 	}
 	
-	if ((mouseX >= (lavaX[2] - lavaSize/2))
-		&& (mouseX <= (lavaX[2] + lavaSize/2))
-		&& (mouseY >= (lavaY[2] - lavaSize/2))
-		&& (mouseY <= (lavaY[2] + lavaSize/2))) {
-		bool = bool+1;
-	}
-}
-
 // Heart Functions
 
     function heart1() {
@@ -164,25 +157,24 @@ function draw() {
             triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
             triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
             triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
-
     }
 
     function heart2() {
 
             if (bool == 0) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 1) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 2) {
-            fill(blackH);
+				fill(blackH);
             }
 
             if (bool == 3) {
-            fill(blackH);
+				fill(blackH);
             } 
 
             noStroke();
@@ -195,19 +187,19 @@ function draw() {
     function heart3() {
 
             if (bool == 0) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 1) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 2) {
-            fill(redH);
+				fill(redH);
             }
 
             if (bool == 3) {
-            fill(blackH);
+				fill(blackH);
             } 
 
             noStroke();
@@ -223,64 +215,18 @@ function draw() {
 
         fill(255, 0, 0);
         ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
-		/*
-		I think the reason that the balls are shaking
-	    	after the first hit is beecause of this function continually making lavaY random between 3-5.
-		I think this function should be in the setup function so it'll only do this at the begining of the "loop".
-		*/
-	    	if (bool == 1) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
-		
-		if (bool == 2) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
     }
 
     function lava2() {
 
         fill(255, 0, 0);
         ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
-		
-		if (bool == 1) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
-		
-		if (bool == 2) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
     }
 
     function lava3() {
 
         fill(255, 0, 0);
         ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
-		
-		if (bool == 1) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
-		
-		if (bool == 2) {
-
-			lavaY[0]=random(3, 5);
-			lavaY[1]=random(3, 5);
-			lavaY[2]=random(3, 5);
-		}
     }
 
 function potato() {
@@ -303,16 +249,34 @@ function potato() {
          ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
 }
 
+function startScreen() {
+	
+	// Stuff
+
+        stroke(0, 0, 0);
+        strokeWeight(0.5);
+
+    // Potato
+
+        fill(random(0, 255), random(0, 255), random(0, 255));
+        ellipse(200, 260, 43, 32);
+
+    // Spots
+
+         fill(168, 161, 65);
+         ellipse(210, 208, potatoSpot, potatoSpot);
+         ellipse(215, 204, potatoSpot, potatoSpot);
+         ellipse(204, 207, potatoSpot, potatoSpot);
+}
+
 function endScreen() {
 
-	 if (bool == 3) {
-		 
 		fill(0, 0, 0);
-		rect(1, 1, 400, 400);
-		 
+		rect(0, 0, 400, 400);
+
 		fill(240, 10, 10);
 		textSize(30);
-		text("Game Over", 120, 200);
-	}
-
+		text("Game Over", 110, 200);
+		textSize(24);
+		text("Click Refresh To play again", 30, 250);
  }
