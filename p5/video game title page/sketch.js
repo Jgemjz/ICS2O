@@ -1,5 +1,5 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-08
+2017-04-23 To 2017-06-09
 Lucca*/
 
 // GloBaL vArIaBleS
@@ -91,8 +91,8 @@ function draw() {
         lava2();
         lava3();
 		
-		yourLose();
-		delay();
+	endScreen();
+	delay();
 
 // If A Ball Is Hit
 
@@ -305,10 +305,14 @@ function restart() {
 	bool = 0;
 }
 
-function yourLose () {
-	
-	 if (bool == 3) {
-		 textSize(40);
-		 text("YourLose!!!", 80, 200);
-	 }
+function endScreen () {
+
+	 If (bool == 3) {
+		fill(0, 0, 0);
+		rect(1, 1, 400, 400);
+		fill(240, 10, 10);
+		textSize(16);
+		text("Game Over :/",  70, 200);
+	}
+
  }
