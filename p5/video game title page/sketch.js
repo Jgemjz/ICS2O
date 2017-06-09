@@ -223,8 +223,12 @@ function draw() {
 
         fill(255, 0, 0);
         ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
-		
-		if (bool == 1) {
+		/*
+		I think the reason that the balls are shaking
+	    	after the first hit is beecause of this function continually making lavaY random between 3-5.
+		I think this function should be in the setup function so it'll only do this at the begining of the "loop".
+		*/
+	    	if (bool == 1) {
 
 			lavaY[0]=random(3, 5);
 			lavaY[1]=random(3, 5);
@@ -308,7 +312,7 @@ function endScreen() {
 		 
 		fill(240, 10, 10);
 		textSize(30);
-		text("Game Over", 115, 200);
+		text("Game Over", 120, 200);
 	}
 
  }
