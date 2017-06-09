@@ -307,7 +307,7 @@ function endScreen() {
 		rect(1, 1, 400, 400);
 		 
 		fill(240, 10, 10);
-		textSize(16);
+		textSize(30);
 		text("Game Over", 70, 200);
 	}
 
