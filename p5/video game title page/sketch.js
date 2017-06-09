@@ -311,7 +311,7 @@ function restart() {
 
 function endScreen() {
 
-	 If (bool == 3) {
+	 if (bool == 3) {
 		 
 		fill(0, 0, 0);
 		rect(1, 1, 400, 400);
