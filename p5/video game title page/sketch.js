@@ -97,7 +97,7 @@ function draw() {
     
     // CALLS
 
-		redH = color(200, 0, 0);
+		redH = color(100, 0, 0);
 		blackH = color(0, 0, 0);
 		
 
