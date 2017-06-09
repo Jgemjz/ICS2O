@@ -206,6 +206,10 @@ function draw() {
 			lavaY[0]=-100;
 			lavaY[1]=-100;
 			lavaY[2]=-100;
+			
+				lavaY[0]=lavaY[0]+1;
+				lavaY[1]=lavaY[1]+1;
+				lavaY[2]=lavaY[2]+1;
 		}
 	}
 	
