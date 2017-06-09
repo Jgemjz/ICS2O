@@ -305,14 +305,16 @@ function restart() {
 	bool = 0;
 }
 
-function endScreen () {
+function endScreen() {
 
 	 If (bool == 3) {
+		 
 		fill(0, 0, 0);
 		rect(1, 1, 400, 400);
+		 
 		fill(240, 10, 10);
 		textSize(16);
-		text("Game Over :/",  70, 200);
+		text("Game Over", 70, 200);
 	}
 
  }
