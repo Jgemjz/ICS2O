@@ -115,7 +115,6 @@ function draw() {
         lava3();
 		
 	endScreen();
-	delay();
 
 // If A Ball Is Hit
 
