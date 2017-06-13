@@ -74,7 +74,7 @@ function draw() {
 		strokeWeight(0.5);
 		text(num, 5, 20);
 		num=num+1;
-		if (bool ==3) {
+		if (bool == 3) {
 		fill(255, 0, 0);
 		num=num;
 		}
