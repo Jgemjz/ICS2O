@@ -70,9 +70,13 @@ function draw() {
 	
 	// Distance
 	
+		fill(0, 0, 0);
 		strokeWeight(0.5);
-		text(num, 10, 20);
+		text(num, 10, 10);
 		num=num+1;
+		if (bool ==3) {
+		num=num;
+		}
 	
 	// Rectangle
 
