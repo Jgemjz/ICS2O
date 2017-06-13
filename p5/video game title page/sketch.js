@@ -1,7 +1,7 @@
 /*Potato Dodge Video Game
 2017-04-23 To 2017-06-14
 Lucca*/
- 
+
 /*
 	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
 	I'll do this...
