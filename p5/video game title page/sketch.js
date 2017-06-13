@@ -95,10 +95,8 @@ function draw() {
 
         tY = 200;
         tX = 200;
-	if (mouseIsPressed) {
+	
 	potato();
-	mouseIsPressed
-	}
 	
         heart1();
         heart2();
@@ -107,11 +105,11 @@ function draw() {
         lava1();
         lava2();
         lava3();
-		lava4();
-		lava5();
+	lava4();
+	lava5();
 		
 // ball hitboxes/increasing "bool"
-if (mouseIsPressed) {
+
 	for (var Q=0; Q<5; Q++) {
 		if ((mouseX >= (lavaX[Q] - lavaSize/2))
 			&& (mouseX <= (lavaX[Q] + lavaSize/2))
@@ -120,7 +118,7 @@ if (mouseIsPressed) {
 			bool = bool+1;
 			lavaAtTop();
 		}	
-}		
+	
 		if (bool >= 3) {
 			endScreen();
 		}
