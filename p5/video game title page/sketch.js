@@ -95,7 +95,7 @@ function draw() {
 
         tY = 200;
         tX = 200;
-	if (mousePressed) {
+	if (mouseIsPressed) {
 	potato();
 	}
 	
