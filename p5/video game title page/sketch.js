@@ -75,6 +75,7 @@ function draw() {
 		text(num, 5, 20);
 		num=num+1;
 		if (bool ==3) {
+		fill(255, 0, 0);
 		num=num;
 		}
 	
