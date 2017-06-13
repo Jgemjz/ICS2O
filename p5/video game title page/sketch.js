@@ -97,6 +97,7 @@ function draw() {
         tX = 200;
 	if (mouseIsPressed) {
 	potato();
+	mouseIsPressed
 	}
 	
         heart1();
