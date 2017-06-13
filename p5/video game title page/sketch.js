@@ -110,7 +110,7 @@ function draw() {
 		lava5();
 		
 // ball hitboxes/increasing "bool"
-
+if (mouseIsPressed) {
 	for (var Q=0; Q<5; Q++) {
 		if ((mouseX >= (lavaX[Q] - lavaSize/2))
 			&& (mouseX <= (lavaX[Q] + lavaSize/2))
@@ -119,7 +119,7 @@ function draw() {
 			bool = bool+1;
 			lavaAtTop();
 		}	
-		
+}		
 		if (bool >= 3) {
 			endScreen();
 		}
