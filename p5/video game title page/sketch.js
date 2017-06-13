@@ -58,24 +58,28 @@ function setup() {
 
 function draw() {
 
-    // Background
+	// Background
 
-        background(145, 156, 163);
+        	background(145, 156, 163);
 
-    // Rectangle
+	// Rectangle
 
-        stroke(0, 0, 0);
-        strokeWeight(0.5);
-        fill(173, 135, 135);
-        rect(290, 8, 101, 68);
+		stroke(0, 0, 0);
+		strokeWeight(0.5);
+		fill(173, 135, 135);
+		rect(290, 8, 101, 68);
 
-    // Health
+	// Health
 
-        fill(0, 0, 0);
-        textSize(21);
-        text("Health", 310, 34);
-        strokeWeight(1);
-        line(308, 40, 374, 40);
+		fill(0, 0, 0);
+		textSize(21);
+		text("Health", 310, 34);
+		strokeWeight(1);
+		line(308, 40, 374, 40);
+	
+	// Distance
+	
+		text("0"+1, 310, 50);
 
     // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
