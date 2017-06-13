@@ -305,7 +305,7 @@ function endScreen() {
 		textSize(40);
 		text("Game Over", 110, 80);
 		textSize(20);
-		text("You ran? walked?! flew?!?!?!" + num , 110, 230);
+		text("OOO", 110, 230);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
  }
