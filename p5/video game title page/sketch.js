@@ -15,34 +15,38 @@ Lucca*/
 
 // GloBaL vArIaBleS
 
-    // Potato
+   	 // Potato
  
-        var potatoX = 200;
-        var potatoY = 200;
-        var potatoSpot = 5;
+		var potatoX = 200;
+		var potatoY = 200;
+		var potatoSpot = 5;
 
-    // Lava
+    	// Lava
 
-        var lavaX = [10, 20, 30, 40, 50];
-        var lavaY = [-30, -30, -30, -30, 30];
-        var lavaSize;
-        var speed = [2, 3, 4, 5, 6];
+		var lavaX = [10, 20, 30, 40, 50];
+		var lavaY = [-30, -30, -30, -30, 30];
+		var lavaSize;
+		var speed = [2, 3, 4, 5, 6];
 
-    // Hearts
+    	// Hearts
 
-        var tX = 200;
-        var tY = 200;
-        var bool = 0;
+		var tX = 200;
+		var tY = 200;
+		var bool = 0;
 
-    // HitBoxes
+    	// HitBoxes
 
-        var hitBoxX = 1;
-        var hitBoxY = 1;
+		var hitBoxX = 1;
+		var hitBoxY = 1;
 
-    // Heart colours
+    	// Heart colours
 
-        var redH;
-        var blackH;
+		var redH;
+		var blackH;
+
+	// Other
+
+		var num = 0;	
 
 function setup() {
 
@@ -79,7 +83,8 @@ function draw() {
 	
 	// Distance
 	
-		text("0"+1, 310, 50);
+		text("num", 310, 80);
+		num=num+1;
 
     // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
