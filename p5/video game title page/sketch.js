@@ -214,31 +214,31 @@ function draw() {
 // Lava Functions
 
 	function lava1() {
-		strokeWeight(1);
+		
 		fill(255, 0, 0);
 		ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
     	}
 
 	function lava2() {
-		strokeWeight(1);
+		
 		fill(255, 0, 0);
 		ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
    	 }
 
 	function lava3() {
-		strokeWeight(1);
+		
 		fill(255, 0, 0);
 		ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
     	}
 
 	 function lava4() {
-		strokeWeight(1);
+		
 		fill(255, 0, 0);
 		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
    	 }
 
 	 function lava5() {
-		strokeWeight(1);
+		
 		fill(255, 0, 0);
 		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
     	}
