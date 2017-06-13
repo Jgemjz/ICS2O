@@ -72,7 +72,7 @@ function draw() {
 	
 		fill(0, 0, 0);
 		strokeWeight(0.5);
-		text(num, 10, 10);
+		text(num, 5, 20);
 		num=num+1;
 		if (bool ==3) {
 		num=num;
