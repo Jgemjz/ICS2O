@@ -307,5 +307,5 @@ function endScreen() {
 		textSize(20);
 		text("You ran? walked?! flew?!?!?!" + num , 110, 230);
 		textSize(14);
-		text("Click Refresh To play again", 100, 20);
+		text("Click Refresh To play again", 100, 380);
  }
