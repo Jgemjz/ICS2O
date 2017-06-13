@@ -302,7 +302,7 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(20);
+		textSize(40);
 		text("Game Over", 110, 200);
 		textSize(20);
 		text("You ran? walked?! flew?!?!?!" + num , 110, 230);
