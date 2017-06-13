@@ -52,7 +52,7 @@ function setup() {
 	
 		lavaAtTop();
 		
-    	lavaSize = 60;
+    	lavaSize = 70;
 		bool = 0;
 }
 
