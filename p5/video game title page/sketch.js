@@ -67,7 +67,13 @@ function draw() {
 	// Background
 
         	background(145, 156, 163);
-
+	
+	// Distance
+	
+		strokeWeight(0.5);
+		text(num, 10, 20);
+		num=num+1;
+	
 	// Rectangle
 
 		stroke(0, 0, 0);
@@ -82,12 +88,6 @@ function draw() {
 		text("Health", 310, 34);
 		strokeWeight(1);
 		line(308, 40, 374, 40);
-	
-	// Distance
-	
-		strokeWeight(0.5);
-		text(num, 10, 20);
-		num=num+1;
 
     // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
