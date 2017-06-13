@@ -72,7 +72,7 @@ function draw() {
 	
 		fill(0, 0, 0);
 		strokeWeight(0.5);
-		text(num, 5, 20);
+		text(num, 15, 20);
 		num=num+1;
 	
 	// Rectangle
@@ -302,9 +302,10 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(30);
+		textSize(20);
 		text("Game Over", 110, 200);
+		textSize(20);
 		text("You ran? walked?! flew?!?!?!" + num , 110, 230);
-		textSize(24);
+		textSize(14);
 		text("Click Refresh To play again", 30, 250);
  }
