@@ -83,7 +83,7 @@ function draw() {
 	
 	// Distance
 	
-		text("num", 310, 80);
+		text(num, 310, 80);
 		num=num+1;
 
     // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
