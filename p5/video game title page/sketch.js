@@ -74,9 +74,6 @@ function draw() {
 		strokeWeight(0.5);
 		text(num, 5, 20);
 		num=num+1;
-		if (bool == 3) {
-		fill(255, 0, 0);
-		num=num;
 		}
 	
 	// Rectangle
@@ -310,6 +307,7 @@ function endScreen() {
 		fill(240, 10, 10);
 		textSize(30);
 		text("Game Over", 110, 200);
+		text("You ran? walked?! flew?!?!?! + num", 110, 230);
 		textSize(24);
 		text("Click Refresh To play again", 30, 250);
  }
