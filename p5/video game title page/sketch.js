@@ -109,8 +109,6 @@ function draw() {
         tY = 200;
         tX = 200;
 	
-	
-	
         heart1();
         heart2();
         heart3();
@@ -152,79 +150,79 @@ function draw() {
 	
 // Heart Functions
 
-    function heart1() {
+   	 function heart1() {
 
-            if (bool == 0) {
-				fill(redH);
-            }
+            	if (bool == 0) {
+			fill(redH);
+           	}
 
-            if (bool == 1) {
-				fill(blackH);
-            }
+           	if (bool == 1) {
+			fill(blackH);
+        	}
 
-            if (bool == 2) {
-				fill(blackH);
-            }
+            	if (bool == 2) {
+			fill(blackH);
+            	}
 
-            if (bool == 3) {
-				fill(blackH);
-            } 
+            	if (bool == 3) {
+			fill(blackH);
+           	} 
 
-            noStroke();
-            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
-    }
+		noStroke();
+		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+    	}
 
-    function heart2() {
+	function heart2() {
 
-            if (bool == 0) {
-				fill(redH);
-            }
+		if (bool == 0) {
+			fill(redH);
+		}
 
-            if (bool == 1) {
-				fill(redH);
-            }
+		if (bool == 1) {
+			fill(redH);
+		}
 
-            if (bool == 2) {
-				fill(blackH);
-            }
+		if (bool == 2) {
+			fill(blackH);
+		}
 
-            if (bool == 3) {
-				fill(blackH);
-            } 
+		if (bool == 3) {
+			fill(blackH);
+		} 
 
-            noStroke();
-            tX=tX+28;
-            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
-    }
+		noStroke();
+		tX=tX+28;
+		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+	}
 
-    function heart3() {
+	function heart3() {
 
-            if (bool == 0) {
-				fill(redH);
-            }
+		if (bool == 0) {
+			fill(redH);
+		}
 
-            if (bool == 1) {
-				fill(redH);
-            }
+		if (bool == 1) {
+			fill(redH);
+		}
 
-            if (bool == 2) {
-				fill(redH);
-            }
+		if (bool == 2) {
+			fill(redH);
+		}
 
-            if (bool == 3) {
-				fill(blackH);
-            } 
+		if (bool == 3) {
+			fill(blackH);
+		} 
 
-            noStroke();
-            tX=tX+28;            
-            triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-            triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-            triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
-    }
+		noStroke();
+		tX=tX+28;            
+		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+	}
 
 // Lava Functions
 
@@ -306,7 +304,7 @@ function endScreen() {
 		fill(240, 10, 10);
 		textSize(30);
 		text("Game Over", 110, 200);
-		text("You ran? walked?! flew?!?!?! + num + "kilometers", 110, 230);
+		text("You ran? walked?! flew?!?!?! + num , 110, 230);
 		textSize(24);
 		text("Click Refresh To play again", 30, 250);
  }
