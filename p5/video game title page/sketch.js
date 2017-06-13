@@ -53,7 +53,7 @@ function setup() {
 		lavaAtTop();
 		
     	lavaSize = 70;
-		bool = 0;
+	bool = 0;
 }
 
 function draw() {
@@ -214,31 +214,31 @@ function draw() {
 // Lava Functions
 
 	function lava1() {
-
+		stroke();
 		fill(255, 0, 0);
 		ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
     	}
 
 	function lava2() {
-
+		stroke();
 		fill(255, 0, 0);
 		ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
    	 }
 
 	function lava3() {
-
+		stroke();
 		fill(255, 0, 0);
 		ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
     	}
 
 	 function lava4() {
-
+		stroke();
 		fill(255, 0, 0);
 		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
    	 }
 
 	 function lava5() {
-
+		stroke();
 		fill(255, 0, 0);
 		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
     	}
