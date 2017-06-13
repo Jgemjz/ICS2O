@@ -307,7 +307,7 @@ function endScreen() {
 		fill(240, 10, 10);
 		textSize(30);
 		text("Game Over", 110, 200);
-		text("You ran? walked?! flew?!?!?! + num + "Lightyears!", 110, 230);
+		text("You ran? walked?! flew?!?!?! + num + "kilometers", 110, 230);
 		textSize(24);
 		text("Click Refresh To play again", 30, 250);
  }
