@@ -1,5 +1,5 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-09
+2017-04-23 To 2017-06-14
 Lucca*/
 
 /*
@@ -23,10 +23,10 @@ Lucca*/
 
     // Lava
 
-        var lavaX = [10, 20, 30];
-        var lavaY = [-30, -30, -30];
+        var lavaX = [10, 20, 30, 40, 50];
+        var lavaY = [-30, -30, -30, -30, 30];
         var lavaSize;
-        var speed = [2, 3, 4];
+        var speed = [2, 3, 4, 5, 6];
 
     // Hearts
 
@@ -105,6 +105,8 @@ function draw() {
         lava1();
         lava2();
         lava3();
+	lava4();
+	lava5();
 		
 // ball hitboxes/increasing "bool"
 
@@ -211,23 +213,35 @@ function draw() {
 
 // Lava Functions
 
-    function lava1() {
+	function lava1() {
 
-        fill(255, 0, 0);
-        ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
-    }
+		fill(255, 0, 0);
+		ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+    	}
 
-    function lava2() {
+	function lava2() {
 
-        fill(255, 0, 0);
-        ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
-    }
+		fill(255, 0, 0);
+		ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+   	 }
 
-    function lava3() {
+	function lava3() {
 
-        fill(255, 0, 0);
-        ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
-    }
+		fill(255, 0, 0);
+		ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+    	}
+
+	 function lava4() {
+
+		fill(255, 0, 0);
+		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
+   	 }
+
+	 function lava5() {
+
+		fill(255, 0, 0);
+		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
+    	}
 
 function potato() {
 
