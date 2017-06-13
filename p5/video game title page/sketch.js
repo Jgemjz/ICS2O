@@ -95,12 +95,13 @@ function draw() {
 
         tY = 200;
         tX = 200;
-
+	if (mousePressed) {
+	potato();
+	}
+	
         heart1();
         heart2();
         heart3();
-
-        potato();
 
         lava1();
         lava2();
