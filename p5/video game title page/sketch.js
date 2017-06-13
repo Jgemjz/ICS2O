@@ -74,7 +74,6 @@ function draw() {
 		strokeWeight(0.5);
 		text(num, 5, 20);
 		num=num+1;
-		}
 	
 	// Rectangle
 
