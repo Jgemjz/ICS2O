@@ -71,8 +71,8 @@ function draw() {
 	// Distance
 	
 		if (bool == 3) {
-		num=num+0;
-		fill(255, 0, 0);
+			fill(255, 0, 0);
+			num=num+0;
 		}
 	
 		fill(0, 0, 0);
