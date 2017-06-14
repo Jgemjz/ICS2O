@@ -57,10 +57,6 @@ function setup() {
 	// every time the the lava is drawn it starts at the top
 	
 		lavaAtTop();
-
-	if (bool >= 3) {
-		endScreen();
-	}
 	
     	lavaSize = 60;
 	bool = 0;
@@ -107,6 +103,10 @@ function draw() {
                   lavaX[Q]=random(5, 395);
                   speed[Q]=random(4, 5);
               }
+		
+		if (bool >= 3) {
+			endScreen();
+		}
         }
     
     // CALLS
