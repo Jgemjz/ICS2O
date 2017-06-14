@@ -70,11 +70,6 @@ function draw() {
 	
 	// Distance
 	
-		if (bool == 3) {
-			fill(255, 0, 0);
-			num=num+0;
-		}
-	
 		fill(0, 0, 0);
 		strokeWeight(0.5);
 		text(num, 15, 20);
@@ -315,4 +310,9 @@ function endScreen() {
 		text("OOO", 110, 230);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
+	
+		if (bool == 3) {
+			fill(255, 0, 0);
+			num=num+0;
+		}
  }
