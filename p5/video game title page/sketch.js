@@ -94,21 +94,20 @@ function draw() {
 		strokeWeight(1);
 		line(308, 40, 374, 40);
 
-    // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
+   	 // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
-        for (var Q=0; Q<5; Q++) {
-              lavaY[Q]=lavaY[Q]+speed[Q];
-              if (lavaY[Q]>400) {
-                  lavaY[Q]=-30;
-                  lavaX[Q]=random(5, 395);
-                  speed[Q]=random(4, 5);
-              }
-	}	
+		for (var Q=0; Q<5; Q++) {
+			 lavaY[Q]=lavaY[Q]+speed[Q];
+			 if (lavaY[Q]>400) {
+				lavaY[Q]=-30;
+				lavaX[Q]=random(5, 395);
+				speed[Q]=random(4, 5);
+			 }
 		
-	if (bool >= 3) {
-		endScreen();
-	}
-        
+			if (bool >= 3) {
+				endScreen();
+			}
+       		}
     
     // CALLS
 
