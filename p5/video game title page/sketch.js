@@ -75,8 +75,6 @@ function draw() {
 		text(num, 15, 20);
 		num=num+1;
 	
-		
-	
 	// Rectangle
 
 		stroke(0, 0, 0);
@@ -313,6 +311,6 @@ function endScreen() {
 	
 		if (bool == 3) {
 			fill(255, 0, 0);
-			num=num+0;
+			text("num", 200, 200);
 		}
  }
