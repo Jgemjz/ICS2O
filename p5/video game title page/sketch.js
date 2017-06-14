@@ -70,14 +70,17 @@ function draw() {
 	
 	// Distance
 	
+		if (bool == 3) {
+		num=num+0;
+		fill(255, 0, 0);
+		}
+	
 		fill(0, 0, 0);
 		strokeWeight(0.5);
 		text(num, 15, 20);
 		num=num+1;
 	
-		if (bool == 3) {
-		num=num+0;
-		}
+		
 	
 	// Rectangle
 
