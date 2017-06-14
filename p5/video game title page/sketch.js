@@ -103,11 +103,12 @@ function draw() {
                   lavaX[Q]=random(5, 395);
                   speed[Q]=random(4, 5);
               }
+	}	
 		
-		if (bool >= 3) {
-			endScreen();
-		}
-        }
+	if (bool >= 3) {
+		endScreen();
+	}
+        
     
     // CALLS
 
