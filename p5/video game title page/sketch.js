@@ -56,8 +56,11 @@ function setup() {
 
 	// every time the the lava is drawn it starts at the top
 	
-		lavaAtTop();
+	if (bool == -1) {
+		startScreen();
+	}			
 	
+	lavaAtTop();
     	lavaSize = 60;
 	bool = 0;
 }
@@ -282,22 +285,35 @@ function potato() {
 
 function startScreen() {
 	
-	// Stuff
+	if (bool == -1) {
+	
+		// "Background"
+		
+			fill(0, 255, 0);
+			rect(0, 0, 400, 400);
+		
+		// Stuff
 
-        stroke(0, 0, 0);
-        strokeWeight(0.5);
+			stroke(0, 0, 0);
+			strokeWeight(0.5);
 
-    // Potato
+		// Potato
 
-        fill(random(0, 255), random(0, 255), random(0, 255));
-        ellipse(200, 260, 43, 32);
+			fill(230, 197, 78);
+			ellipse(potatoX, potatoY, 43, 32);
 
-    // Spots
+		// Spots
 
-         fill(168, 161, 65);
-         ellipse(210, 208, potatoSpot, potatoSpot);
-         ellipse(215, 204, potatoSpot, potatoSpot);
-         ellipse(204, 207, potatoSpot, potatoSpot);
+			 fill(168, 161, 65);
+			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
+			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
+			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
+		
+		// Start Button 
+		
+			fill();
+			rect(200, 100, 30, 20);
+	}	
 }
 
 function endScreen() {
