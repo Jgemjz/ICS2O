@@ -34,7 +34,7 @@ Lucca*/
 
 		var tX = 200;
 		var tY = 200;
-		var bool = -1;
+		var bool = 0;
 
     	// HitBoxes
 
@@ -58,7 +58,7 @@ function setup() {
 	
 	lavaAtTop();
     	lavaSize = 60;
-	bool = -1;
+	bool = 0;
 }
 
 function draw() {
@@ -110,11 +110,7 @@ function draw() {
 	blackH = color(0, 0, 0);
 
         tY = 200;
-        tX = 200;
-	
-		if (bool == -1) {
-			startScreen();
-		}			
+        tX = 200;	
 	
         heart1();
         heart2();
