@@ -56,13 +56,9 @@ function setup() {
 
 	// every time the the lava is drawn it starts at the top
 	
-	if (bool == -1) {
-		startScreen();
-	}			
-	
 	lavaAtTop();
     	lavaSize = 60;
-	bool = 0;
+	bool = -1;
 }
 
 function draw() {
@@ -115,6 +111,10 @@ function draw() {
 
         tY = 200;
         tX = 200;
+	
+		if (bool == -1) {
+			startScreen();
+		}			
 	
         heart1();
         heart2();
@@ -311,7 +311,7 @@ function startScreen() {
 		
 		// Start Button 
 		
-			fill();
+			fill(255, 0, 0);
 			rect(200, 100, 30, 20);
 	}	
 }
