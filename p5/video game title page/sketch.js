@@ -34,7 +34,7 @@ Lucca*/
 
 		var tX = 200;
 		var tY = 200;
-		var bool = 0;
+		var bool = -1;
 
     	// HitBoxes
 
