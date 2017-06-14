@@ -312,6 +312,6 @@ function endScreen() {
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			text(num, 200, 200);
-			num=num;
+			num=num+0;
 		}
  }
