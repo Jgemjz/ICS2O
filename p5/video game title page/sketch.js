@@ -309,8 +309,8 @@ function endScreen() {
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
-		if (bool == 3) {
+		if (bool >= 3) {
 			fill(255, 0, 0);
-			text("num", 200, 200);
+			text(num, 200, 200);
 		}
  }
