@@ -276,10 +276,10 @@ function potato() {
 			mouseX=200;
 		}
 	
-		if (mouseX >= 0) {
-			mouseX=200;
+		if (mouseY <= 0) {
+		    mouseY=200;
 		}
-	
+		    
     	// Stuff
 
         	stroke(0, 0, 0);
