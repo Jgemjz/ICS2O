@@ -326,7 +326,8 @@ function endScreen() {
 	
 		if (bool >= 3) {
 			fill(255, 0, 0);
-			text(num, 200, 200);
+			text("Your score was:", 200, 240);
+			text(num+!, 200, 200);
 			num=num-1;
 		}
  }
