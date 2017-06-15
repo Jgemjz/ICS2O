@@ -322,5 +322,15 @@ function endScreen() {
 			   	textSize(16);
 				text("(Nice!)", 175, 300);
 			}
+			
+			if (num>=1501 && num<=2000) {
+			   	textSize(16);
+				text("(Cool Beans!)", 145, 300);
+			}
+			
+			if (num>=2001 && num<=2500) {
+			   	textSize(16);
+				text("(WOW!)", 175, 300);
+			}
 		}
  }
