@@ -2,7 +2,7 @@
 2017-04-23 To 2017-06-14
 Lucca*/
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 /*
 	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
@@ -300,8 +300,7 @@ function endScreen() {
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			textSize(28);
-			text("Your score was:", 100, 200);
-			text(num + "km!" , 160, 240);
+			text("You Ran" num + "km!", 100, 200);
 			num=num-1;
 		}
  }
