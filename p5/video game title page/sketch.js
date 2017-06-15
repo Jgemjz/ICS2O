@@ -289,8 +289,8 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(46);
-		text("Potato Been Cooked!", 50, 100);
+		textSize(40);
+		text("Potato Been Cooked!", 48, 100);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
