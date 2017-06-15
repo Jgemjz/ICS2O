@@ -332,5 +332,10 @@ function endScreen() {
 			   	textSize(16);
 				text("(WOW!)", 175, 300);
 			}
+			
+			if (num>=2501 && num<=3000) {
+			   	textSize(16);
+				text("(Really Good!)", 150, 300);
+			}
 		}
  }
