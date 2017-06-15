@@ -303,7 +303,7 @@ function endScreen() {
 			text("You Ran: " + num + "km!", 100, 260);
 			num=num-1;
 			
-			if (num>=0 UU& num<=100) {
+			if (num>=0 && num <=100) {
 				text("(Dude, You Suck)", 200, 200);
 			}
 			
