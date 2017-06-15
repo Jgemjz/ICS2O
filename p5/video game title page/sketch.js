@@ -300,7 +300,7 @@ function endScreen() {
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			textSize(28);
-			text("You Ran: " + num + "km!", 100, 60);
+			text("You Ran: " + num + "km!", 100, 260);
 			num=num-1;
 		}
  }
