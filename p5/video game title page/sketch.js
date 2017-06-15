@@ -4,16 +4,9 @@ Lucca*/
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-// 9095
-
 /*
 	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
 	I'll do this...
-	
-		if (bool ==-1) {
-			startScreen();
-		}
-
 	I could make a button at the "game Over" screen that if it's pressed bool is -1 (starts Over).
 */
 
@@ -27,10 +20,10 @@ Lucca*/
 
     	// Lava
 
-		var lavaX = [10, 20, 30, 40, 50];
-		var lavaY = [-30, -30, -30, -30, 30];
+		var lavaX = [10, 20, 30, 40, 50, 60, 70];
+		var lavaY = [-30, -30, -30, -30, -30, -30, -30];
 		var lavaSize;
-		var speed = [2, 3, 4, 5, 6];
+		var speed = [2, 3, 4, 5, 6, 7 , 8];
 
     	// Hearts
 
@@ -97,7 +90,7 @@ function draw() {
 
    	 // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
     
-		for (var Q=0; Q<5; Q++) {
+		for (var Q=0; Q<7; Q++) {
 			 lavaY[Q]=lavaY[Q]+speed[Q];
 			 if (lavaY[Q]>400) {
 				lavaY[Q]=-30;
@@ -125,10 +118,12 @@ function draw() {
         lava3();
 	lava4();
 	lava5();
+	lava6();
+	lava7();
 		
 // ball hitboxes/increasing "bool"
 
-	for (var Q=0; Q<5 && Q>=0; Q++) {
+	for (var Q=0; Q<7 && Q>=0; Q++) {
 		if ((mouseX >= (lavaX[Q] - lavaSize/2))
 			&& (mouseX <= (lavaX[Q] + lavaSize/2))
 			&& (mouseY >= (lavaY[Q] - lavaSize/2))
@@ -146,7 +141,7 @@ function draw() {
 
 	function lavaAtTop() {
 		
-		for (var Q=0; Q<5; Q++) {
+		for (var Q=0; Q<7; Q++) {
 		    lavaX[Q] = random(5, 395);
 			lavaY[Q]=-30;
 			
@@ -253,13 +248,25 @@ function draw() {
 		
 		fill(255, 0, 0);
 		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
-   	 }
+   	}
 
 	 function lava5() {
 		
 		fill(255, 0, 0);
 		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
     	}
+
+	function lava6() {
+
+		fill(255, 0, 0);
+		ellipse(lavaX[5], lavaY[5], lavaSize, lavaSize);
+	}
+
+	function lava7() {
+
+		fill(255, 0, 0);
+		ellipse(lavaX[6], lavaY[6], lavaSize, lavaSize);
+	}
 
 function potato() {
 
