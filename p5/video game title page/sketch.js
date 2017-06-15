@@ -276,8 +276,8 @@ function potato() {
 			mouseX=200;
 		}
 	
-		if (mouseY >= 400) {
-			mouseY=200;
+		if (mouseX >= 0) {
+			mouseX=200;
 		}
 	
     	// Stuff
