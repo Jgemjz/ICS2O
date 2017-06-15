@@ -56,6 +56,9 @@ function setup() {
 
 	// every time the the lava is drawn it starts at the top
 	
+	if (bool == 3) {
+	num=num-1;
+	}
 	lavaAtTop();
     	lavaSize = 60;
 	bool = 0;
@@ -326,6 +329,6 @@ function endScreen() {
 	
 		if (bool >= 3) {
 			fill(255, 0, 0);
-			text(num=num, 200, 200);
+			text(num, 200, 200);
 		}
  }
