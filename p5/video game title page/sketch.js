@@ -289,10 +289,10 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(40);
-		text("Potato Been", 80, 100);
+		textSize(45);
+		text("Potato Been", 70, 100);
 		textSize(42);
-		text("Cooked!", 120, 140);
+		text("Cooked!", 120, 150);
 
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
