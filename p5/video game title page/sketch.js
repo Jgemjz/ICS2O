@@ -303,6 +303,16 @@ function endScreen() {
 			text("You Ran: " + num + "km!", 100, 260);
 			num=num-1;
 			
+			if (num==69) {
+				textSize(16);
+				text("(LOL)", 180, 300);
+			}
+			
+			if (num==420) {
+				textSize(16);
+				text("(Blaze It)", 160, 300);
+			}
+			
 			if (num>=0 && num <=100) {
 				textSize(16);
 				text("(Dude, You Suck)", 130, 300);
