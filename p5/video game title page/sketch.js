@@ -305,7 +305,12 @@ function endScreen() {
 			
 			if (num>=0 && num <=100) {
 				textSize(16);
-				text("(Dude, You Suck)", 120, 300);
+				text("(Dude, You Suck)", 130, 300);
+			}
+			
+			if (num>=100 && num<=500) {
+				textSize(16);
+				text("(Okayish)", 145, 300);
 			}
 		}
  }
