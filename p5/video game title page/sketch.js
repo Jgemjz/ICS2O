@@ -318,8 +318,8 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(40);
-		text("Game Over!", 85, 80);
+		textSize(48);
+		text("Game Over!", 60, 100);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
@@ -328,7 +328,7 @@ function endScreen() {
 			textSize(28);
 			text("Your score was:", 100, 200);
 			text(num , 180, 240);
-			text("!", 210, 240);
+			text("km!", 210, 240);
 			num=num-1;
 		}
  }
