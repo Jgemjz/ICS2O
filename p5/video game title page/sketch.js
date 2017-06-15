@@ -317,5 +317,10 @@ function endScreen() {
 				textSize(16);
 				text("(Ehh, Not Bad)", 140, 300);
 			}
+			
+			if (num>=1001 && num<=1500) {
+			   	textSize(16);
+				text("(Nice!)", 175, 300);
+			}
 		}
  }
