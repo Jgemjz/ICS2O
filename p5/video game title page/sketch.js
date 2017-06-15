@@ -141,7 +141,7 @@ function draw() {
 		textSzie(20);
 		text("Click Anywhere To Start!", 200, 200);
 		
-		if (mouseIsPressed) {
+		if (mousePressed) {
 		bool=bool+1;
 		}
 	}
