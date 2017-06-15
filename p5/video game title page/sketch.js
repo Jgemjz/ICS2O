@@ -304,7 +304,7 @@ function endScreen() {
 			num=num-1;
 			
 			if (num>=0 && num <=100) {
-				text(16;
+				text(16);
 				text("(Dude, You Suck)", 300, 340);
 			}
 		}
