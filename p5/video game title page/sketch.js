@@ -15,6 +15,10 @@ Lucca*/
 	I could make a button at the "game Over" screen that if it's pressed bool is -1 (starts Over).
 */
 
+if (bool == -1) {
+
+}
+
 // GloBaL vArIaBleS
 
    	 // Potato
@@ -126,7 +130,7 @@ function draw() {
 		
 // ball hitboxes/increasing "bool"
 
-	for (var Q=0; Q<5; Q++) {
+	for (var Q=0; Q<5 && Q>=0; Q++) {
 		if ((mouseX >= (lavaX[Q] - lavaSize/2))
 			&& (mouseX <= (lavaX[Q] + lavaSize/2))
 			&& (mouseY >= (lavaY[Q] - lavaSize/2))
@@ -135,10 +139,20 @@ function draw() {
 			lavaAtTop();
 		}	
 	}
-	
+	//!!!!!!!!!!!!!!!!!
+	if (bool == -1) {
+		fill(20, 20, 20);
+		textSzie(20);
+		text("Click Anywhere To Start!", 200, 200);
+		
+		if (mouseIsPressed) {
+		bool=bool+1;
+		}
+	}
+	//!!!!!!!!!!!!!!!!
 	if (bool >= 3) {
-				endScreen();
-			}
+		endScreen();
+	}
 	
 } // End of Draw Function!!!
 
@@ -280,36 +294,7 @@ function potato() {
 }
 
 function startScreen() {
-	
-	if (bool == -1) {
-	
-		// "Background"
-		
-			fill(0, 255, 0);
-			rect(0, 0, 400, 400);
-		
-		// Stuff
-
-			stroke(0, 0, 0);
-			strokeWeight(0.5);
-
-		// Potato
-
-			fill(230, 197, 78);
-			ellipse(potatoX, potatoY, 43, 32);
-
-		// Spots
-
-			 fill(168, 161, 65);
-			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
-			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
-			 ellipse(potatoX, potatoY, potatoSpot, potatoSpot);
-		
-		// Start Button 
-		
-			fill(255, 0, 0);
-			rect(200, 100, 30, 20);
-	}	
+// MAYBE DO???		
 }
 
 function endScreen() {
@@ -327,7 +312,7 @@ function endScreen() {
 			fill(255, 0, 0);
 			textSize(28);
 			text("Your score was:", 100, 200);
-			text(num + "km!" , 175, 240);
+			text(num + "km!" , 160, 240);
 			num=num-1;
 		}
  }
