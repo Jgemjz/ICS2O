@@ -358,9 +358,14 @@ function endScreen() {
 				text("(Cool! We Tied!)", 140, 300);
 			}
 			
-			if (num>=4478) {
+			if (num>=4478 && num<=9000) {
 			   	textSize(16);
 				text("(You Beat My HighScore!!!)", 125, 300);
+			}
+			
+			if (num>9000) {
+			    	textSize(16);
+				text("(OVER 9000!!!)", 140, 300);
 			}
 		}
  }
