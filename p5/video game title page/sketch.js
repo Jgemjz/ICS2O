@@ -34,7 +34,7 @@ Lucca*/
 
 		var tX = 200;
 		var tY = 200;
-		var bool = -1;
+		var bool = 0;
 
     	// HitBoxes
 
@@ -58,7 +58,7 @@ function setup() {
 	
 	lavaAtTop();
     	lavaSize = 60;
-	bool = -1;
+	bool = 0;
 }
 
 function draw() {
@@ -135,17 +135,7 @@ function draw() {
 			lavaAtTop();
 		}	
 	}
-	//!!!!!!!!!!!!!!!!!
-	if (bool == -1) {
-		fill(20, 20, 20);
-		textSzie(20);
-		text("Click Anywhere To Start!", 200, 200);
-		
-		if (mousePressed) {
-		bool=bool+1;
-		}
-	}
-	//!!!!!!!!!!!!!!!!
+	
 	if (bool >= 3) {
 		endScreen();
 	}
@@ -299,8 +289,8 @@ function endScreen() {
 		rect(0, 0, 400, 400);
 
 		fill(240, 10, 10);
-		textSize(48);
-		text("Game Over!", 60, 100);
+		textSize(46);
+		text("Potato Been Cooked!", 50, 100);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
