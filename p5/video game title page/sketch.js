@@ -321,12 +321,11 @@ function endScreen() {
 		textSize(40);
 		text("Game Over", 110, 80);
 		textSize(20);
-		text("OOO", 110, 230);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
 		if (bool >= 3) {
 			fill(255, 0, 0);
-			text(num, 200, 200);
+			text(num=num, 200, 200);
 		}
  }
