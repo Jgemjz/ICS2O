@@ -320,15 +320,15 @@ function endScreen() {
 		fill(240, 10, 10);
 		textSize(40);
 		text("Game Over", 85, 80);
-		textSize(20);
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
 	
 		if (bool >= 3) {
 			fill(255, 0, 0);
+			textSize(28);
 			text("Your score was:", 150, 160);
 			text(num , 200, 200);
-			text("!", 235, 200);
+			text("!", 225, 200);
 			num=num-1;
 		}
  }
