@@ -277,7 +277,7 @@ function potato() {
 		}
 	
 		if (mouseY <= 0) {
-		    mouseY=200;
+			bool=bool+1;
 		}
 		    
     	// Stuff
