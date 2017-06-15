@@ -270,22 +270,32 @@ function draw() {
 
 function potato() {
 
-    // Stuff
+	// No Cheating!!!
+	
+		if (mouseX >= 400) {
+			mouseX=200;
+		}
+	
+		if (mouseY >= 400) {
+			mouseY=200;
+		}
+	
+    	// Stuff
 
-        stroke(0, 0, 0);
-        strokeWeight(0.5);
+        	stroke(0, 0, 0);
+        	strokeWeight(0.5);
 
-    // Potato
+ 	// Potato
 
-        fill(230, 197, 78);
-        ellipse(mouseX, mouseY, 43, 32);
+		fill(230, 197, 78);
+		ellipse(mouseX, mouseY, 43, 32);
 
-    // Spots
+    	// Spots
 
-         fill(168, 161, 65);
-         ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
-         ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
-         ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
+		 fill(168, 161, 65);
+		 ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
+		 ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
+		 ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
 }
 
 function startScreen() {
@@ -309,7 +319,7 @@ function endScreen() {
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			textSize(28);
-			text("You Ran: " + num + "km!", 100, 260);
+			text("You Flew: " + num + "km!", 100, 260);
 			num=num-1;
 			
 			if (num==69) {
