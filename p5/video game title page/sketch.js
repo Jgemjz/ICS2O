@@ -327,8 +327,7 @@ function endScreen() {
 			fill(255, 0, 0);
 			textSize(28);
 			text("Your score was:", 100, 200);
-			text(num , 175, 240);
-			text("km!", 210, 240);
+			text(num + "km!" , 175, 240);
 			num=num-1;
 		}
  }
