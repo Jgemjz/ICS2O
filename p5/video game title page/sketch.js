@@ -338,6 +338,11 @@ function endScreen() {
 				text("(Really Good!)", 150, 300);
 			}
 			
+			if (num>=3001 && num<=4477) {
+			   	textSize(16);
+				text("(Incredible!)", 160, 300);
+			}
+			
 			if (num==4478) {
 			   	textSize(16);
 				text("(Cool! We Tied!)", 140, 300);
