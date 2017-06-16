@@ -345,7 +345,7 @@ function endScreen() {
 			
 			if (num>=1001 && num<=1500) {
 			   	textSize(16);
-				text("(Nice!)", 175, 300);
+				text("(Yàll Been Shreked)", 145, 300);
 			}
 			
 			if (num>=1501 && num<=2000) {
@@ -390,7 +390,7 @@ function endScreen() {
 			
 			if (num>=8001 && num<=8999) {
 			   	textSize(16);
-				text("()", 160, 300);
+				text("(Nice!)", 175, 300);
 			}
 			
 			if (num>9000) {
