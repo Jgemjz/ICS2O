@@ -337,7 +337,12 @@ function startScreen() {
 	
 	fill(0, 0, 0);
 	textSize(32);
-	text("Play?", 168, 318);
+	text("Play?", 164, 318);
+	
+	if (mouseIsPressed && mouseX >= 280 && mouseX <= 140) {
+		
+		bool=0;
+	}
 }
 
 function endScreen() {
