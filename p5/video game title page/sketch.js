@@ -12,7 +12,7 @@ Lucca*/
 
 		var potatoX = 200;
 		var potatoY = 200;
-		var potatoSpot = 5
+		var potatoSpot = 5 
 
     	// Lava
 
