@@ -337,7 +337,7 @@ function startScreen() {
 	
 	fill(0, 0, 0);
 	textSize(26);
-	text("Play?", 180, 340);
+	text("Play?", 160, 310);
 }
 
 function endScreen() {
