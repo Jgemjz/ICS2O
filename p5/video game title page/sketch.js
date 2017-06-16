@@ -46,10 +46,6 @@ function setup() {
 		lavaSize = 60;
 		bool = -1;
 
-		if (bool == -1) {
-			startScreen();   
-		}	
-
 		if (bool >= 0) {
 			lavaAtTop();
 		}
@@ -61,6 +57,10 @@ function draw() {
 
         	background(145, 156, 163);
 
+		if (bool == -1) {
+			startScreen();   
+		}	
+		
 	// Distance
 	
 		if (bool >= 0) {
