@@ -43,6 +43,10 @@ function setup() {
 
 	// every time the the lava is drawn it starts at the top
 	
+		if (bool == -1) {
+		startScreen();   
+		}	
+	
 		if (bool >= 0) {
 		    lavaAtTop();
 		}
@@ -324,10 +328,9 @@ function potato() {
 }
 
 function startScreen() {
-	if (bool == -1) {
-		fill(20, 20, 20);
-		rect(0, 0, 400, 400);
-	}
+	
+	fill(20, 20, 20);
+	rect(0, 0, 400, 400);
 }
 
 function endScreen() {
