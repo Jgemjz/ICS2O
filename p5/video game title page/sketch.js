@@ -353,7 +353,7 @@ function startScreen() {
 	textSize(32);
 	text("Play?", 164, 340);
 	 
-	if (mouseIsPressed && (mouseX >= 140) && (mouseX <= 260) && (mouseY >= 320) && (mouseY <=335)) {
+	if (mouseIsPressed && (mouseX >= 140) && (mouseX <= 260) && (mouseY >= 320) && (mouseY <=370)) {
 		
 		bool=0;
 	}
