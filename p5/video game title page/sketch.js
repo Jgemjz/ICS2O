@@ -450,7 +450,7 @@ function endScreen() {
 
 			if (num>9000) {
 			    	textSize(16);
-				text("(OVER 9000!!!)", 140, 280)
+				text("(OVER 9000!!!)", 140, 280);
 			}
 		}
  }
