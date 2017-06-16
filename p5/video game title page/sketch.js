@@ -330,7 +330,7 @@ function potato() {
 function startScreen() {
 	
 	fill(153, 153, 0);
-	rect(0, 0, 400, 400);
+	rect(0, 0, 401, 401);
 	
 	fill(153, 0, 153);
 	rect(140, 280, 120, 55);
@@ -339,7 +339,7 @@ function startScreen() {
 	textSize(32);
 	text("Play?", 164, 318);
 	
-	if (mouseClicked && mouseX >= 140 && mouseX <= 280) {
+	if ((mouseClicked) && (mouseX >= 140) && (mouseX <= 280)) {
 		
 		bool=0;
 	}
