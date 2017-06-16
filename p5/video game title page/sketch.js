@@ -333,7 +333,7 @@ function startScreen() {
 	rect(0, 0, 400, 400);
 	
 	fill(0, 255, 0);
-	rect(180, 300, 50, 20);
+	rect(180, 300, 120, 70);
 }
 
 function endScreen() {
