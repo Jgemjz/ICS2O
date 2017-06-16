@@ -322,67 +322,67 @@ function endScreen() {
 
 			if (num>=101 && num<=500) {
 				textSize(16);
-				text("(You Did Okayish)", 145, 300);
+				text("(You Did Okayish)", 145, 280);
 			}
 
 			if (num>=501 && num<=1000) {
 				textSize(16);
-				text("(Ehh, Not Bad)", 140, 300);
+				text("(Ehh, Not Bad)", 140, 280);
 			}
 
 			if (num>=1001 && num<=1500) {
 			   	textSize(16);
-				text("(Y'all Been Shreked)", 145, 300);
+				text("(Y'all Been Shreked)", 145, 280);
 			}
 
 			if (num>=1501 && num<=2000) {
 			   	textSize(16);
-				text("(Cool Beans!)", 145, 300);
+				text("(Cool Beans!)", 145, 280);
 			}
 
 			if (num>=2001 && num<=2500) {
 			   	textSize(16);
-				text("(WOW!)", 175, 300);
+				text("(WOW!)", 175, 280);
 			}
 
 			if (num>=2501 && num<=3000) {
 			   	textSize(16);
-				text("(Really Good!)", 160, 300);
+				text("(Really Good!)", 160, 280);
 			}
 
 			if (num>=3001 && num<=4000) {
 			   	textSize(16);
-				text("(Swaggy!)", 170, 300);
+				text("(Swaggy!)", 170, 280);
 			}
 
 			if (num>=4001 && num<=5000) {
 			   	textSize(16);
-				text("(Incredible!)", 160, 300);
+				text("(Incredible!)", 160, 280);
 			}
 
 			if (num>=5001 && num<=6000) {
 			   	textSize(16);
-				text("(Sick!)", 175, 300);
+				text("(Sick!)", 175, 280);
 			}
 
 			if (num>=6001 && num<=7000) {
 			   	textSize(16);
-				text("(Y'all R Gud)", 150, 300);
+				text("(Y'all R Gud)", 150, 280);
 			}
 
 			if (num>=7001 && num<=8000) {
 			   	textSize(16);
-				text("(You Dun Did Gud)", 145, 300);
+				text("(You Dun Did Gud)", 145, 280);
 			}
 
 			if (num>=8001 && num<=8999) {
 			   	textSize(16);
-				text("(Nice!)", 175, 300);
+				text("(Nice!)", 175, 280);
 			}
 
 			if (num>9000) {
 			    	textSize(16);
-				text("(OVER 9000!!!)", 140, 300);
+				text("(OVER 9000!!!)", 140, 280);
 			}
 		}
  }
