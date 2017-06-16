@@ -332,12 +332,12 @@ function startScreen() {
 	fill(153, 153, 0);
 	rect(0, 0, 400, 400);
 	
-	fill(0, 0, 0);
-	textSize(24);
-	text("Play?", 140, 280);
-	
 	fill(153, 0, 153);
 	rect(140, 280, 120, 55);
+	
+	fill(0, 0, 0);
+	textSize(26);
+	text("Play?", 180, 340);
 }
 
 function endScreen() {
