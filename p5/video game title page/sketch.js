@@ -43,16 +43,16 @@ function setup() {
 
 	// every time the the lava is drawn it starts at the top
 	
+		lavaSize = 60;
+		bool = -1;
+
 		if (bool == -1) {
-		startScreen();   
+			startScreen();   
 		}	
-	
+
 		if (bool >= 0) {
-		    lavaAtTop();
+			lavaAtTop();
 		}
-	
-    	lavaSize = 60;
-	bool = -1;
 }
 
 function draw() {
@@ -330,7 +330,7 @@ function potato() {
 function startScreen() {
 	
 	fill(20, 20, 20);
-	rect(0, 0, 400, 400);
+	rect(200, 200, 100, 100);
 }
 
 function endScreen() {
