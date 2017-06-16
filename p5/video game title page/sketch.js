@@ -333,11 +333,12 @@ function startScreen() {
 	rect(-1, -1, 401, 401);
 	
 	fill(153, 0, 153);
-	rect(140, 280, 120, 55);
+	rect(180, 320, 120, 55);
 	
 	fill(0, 0, 255);
 	textSize(20)
 	text("INSTRUCTIONS:", 110, 70);
+	
 	fill(0, 0, 255);
 	textSize(17);
 	text("Mr. Potato has a fear of being cooked alive. Help", 20, 125);
