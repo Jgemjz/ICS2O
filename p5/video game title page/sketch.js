@@ -330,7 +330,7 @@ function potato() {
 function startScreen() {
 	
 	fill(20, 20, 20);
-	rect(200, 200, 100, 100);
+	rect(0, 0, 400, 400);
 }
 
 function endScreen() {
