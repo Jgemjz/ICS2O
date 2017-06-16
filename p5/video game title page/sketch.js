@@ -340,10 +340,12 @@ function startScreen() {
 	text("INSTRUCTIONS:", 80, 40);
 	fill(70, 70, 255);
 	textSize(14);
-	text("Mr. Potato has a fear of being cooked alive. Help him avoid", 20, 60);
-	text("his fear by keeping him away from the dripping lava! When hit by", 20, 80);
-	text(" a lava ball you'll lose a life indecated by one of the three hearts going from ", 20, 100);
-	text("red/pink to black. If all hearts go black you lose, last as long as you can.", 20, 120);
+	text("Mr. Potato has a fear of being cooked alive. Help him avoid", 15, 60);
+	text("his fear by keeping him away from the dripping lava! When", 20, 80);
+	text("hit by a lava ball you'll lose a life indecated by one of", 20, 100);
+	text("the three hearts going from red/pink to black. If all hearts", 15, 120);
+	text("go black you lose, last as long as you can. You control", 23, 140);
+	text("Mr. Potato using the mouse, Good Luck!", 30, 160);
 	
 	fill(0, 0, 0);
 	textSize(32);
