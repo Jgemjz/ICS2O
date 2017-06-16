@@ -21,7 +21,7 @@ Lucca*/
 
 		var tX = 200;
 		var tY = 200;
-		var bool = 0;
+		var bool = -1;
 
     	// HitBoxes
 
@@ -48,7 +48,7 @@ function setup() {
 		}
 	
     	lavaSize = 60;
-	bool = 0;
+	bool = -1;
 }
 
 function draw() {
