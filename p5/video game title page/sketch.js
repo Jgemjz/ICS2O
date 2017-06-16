@@ -336,10 +336,14 @@ function startScreen() {
 	rect(140, 280, 120, 55);
 	
 	fill(0, 0, 0);
+	textSize(18)
+	text("INSTRUCTIONS:", 40, 40);
+	
+	fill(0, 0, 0);
 	textSize(32);
 	text("Play?", 164, 318);
 	 
-	if (mouseIsPressed && (mouseX >= 140) && (mouseX <= 265) && (mouseY >= 280) && (mouseY <=335)) {
+	if (mouseIsPressed && (mouseX >= 140) && (mouseX <= 260) && (mouseY >= 280) && (mouseY <=335)) {
 		
 		bool=0;
 	}
