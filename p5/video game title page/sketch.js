@@ -42,8 +42,11 @@ function setup() {
 	createCanvas(400, 400);
 
 	// every time the the lava is drawn it starts at the top
-
-	lavaAtTop();
+	
+		if (bool >= 0) {
+		    lavaAtTop();
+		}
+	
     	lavaSize = 60;
 	bool = 0;
 }
@@ -55,41 +58,47 @@ function draw() {
         	background(145, 156, 163);
 
 	// Distance
-
-		fill(0, 0, 0);
-		strokeWeight(0.5);
-		text(num, 15, 20);
-		num=num+1;
-
+	
+		if (bool >= 0) {
+			fill(0, 0, 0);
+			strokeWeight(0.5);
+			text(num, 15, 20);
+			num=num+1;
+		}
+	
 		if (bool >= 3) {
 			num=num;
 		}
-
+	
 	// Rectangle
-
-		stroke(0, 0, 0);
-		strokeWeight(0.5);
-		fill(173, 135, 135);
-		rect(290, 8, 101, 68);
-
+	
+		if (bool >= 0) {
+			stroke(0, 0, 0);
+			strokeWeight(0.5);
+			fill(173, 135, 135);
+			rect(290, 8, 101, 68);
+		}
+	
 	// Health
-
-		fill(0, 0, 0);
-		textSize(21);
-		text("Health", 310, 34);
-		strokeWeight(1);
-		line(308, 40, 374, 40);
-
+	
+		if (bool >= 0) {
+			fill(0, 0, 0);
+			textSize(21);
+			text("Health", 310, 34);
+			strokeWeight(1);
+			line(308, 40, 374, 40);
+		}
    	 // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
-
-		for (var Q=0; Q<7; Q++) {
-			 lavaY[Q]=lavaY[Q]+speed[Q];
-			 if (lavaY[Q]>400) {
-				lavaY[Q]=-30;
-				lavaX[Q]=random(5, 395);
-				speed[Q]=random(4, 5);
-			 }
-       		}
+		if (bool >= 0) {
+			for (var Q=0; Q<7; Q++) {
+				 lavaY[Q]=lavaY[Q]+speed[Q];
+				 if (lavaY[Q]>400) {
+					lavaY[Q]=-30;
+					lavaX[Q]=random(5, 395);
+					speed[Q]=random(4, 5);
+				 }
+			}
+		}
 
     // CALLS
 
@@ -114,17 +123,19 @@ function draw() {
 	lava7();
 
 // ball hitboxes/increasing "bool"
-
-	for (var Q=0; Q<7 && Q>=0; Q++) {
-		if ((mouseX >= (lavaX[Q] - lavaSize/2))
-			&& (mouseX <= (lavaX[Q] + lavaSize/2))
-			&& (mouseY >= (lavaY[Q] - lavaSize/2))
-			&& (mouseY <= (lavaY[Q] + lavaSize/2))) {
-			bool = bool+1;
-			lavaAtTop();
-		}	
+	
+	if (bool >= 0) {
+		for (var Q=0; Q<7 && Q>=0; Q++) {
+			if ((mouseX >= (lavaX[Q] - lavaSize/2))
+				&& (mouseX <= (lavaX[Q] + lavaSize/2))
+				&& (mouseY >= (lavaY[Q] - lavaSize/2))
+				&& (mouseY <= (lavaY[Q] + lavaSize/2))) {
+				bool = bool+1;
+				lavaAtTop();
+			}	
+		}
 	}
-
+	
 	if (bool >= 3) {
 		endScreen();
 	}
@@ -143,156 +154,180 @@ function draw() {
 // Heart Functions
 
    	 function heart1() {
+		 
+		if (bool >= 0) {
+			if (bool == 0) {
+				fill(redH);
+			}
 
-            	if (bool == 0) {
-			fill(redH);
-           	}
+			if (bool == 1) {
+				fill(blackH);
+			}
 
-           	if (bool == 1) {
-			fill(blackH);
-        	}
+			if (bool == 2) {
+				fill(blackH);
+			}
 
-            	if (bool == 2) {
-			fill(blackH);
-            	}
+			if (bool == 3) {
+				fill(blackH);
+			} 
 
-            	if (bool == 3) {
-			fill(blackH);
-           	} 
-
-		noStroke();
-		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+			noStroke();
+			triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+			triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+			triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
+		}
     	}
 
 	function heart2() {
+		
+		if (bool >= 0) {
+			if (bool == 0) {
+				fill(redH);
+			}
 
-		if (bool == 0) {
-			fill(redH);
+			if (bool == 1) {
+				fill(redH);
+			}
+
+			if (bool == 2) {
+				fill(blackH);
+			}
+
+			if (bool == 3) {
+				fill(blackH);
+			} 
+
+			noStroke();
+			tX=tX+28;
+			triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+			triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+			triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 		}
-
-		if (bool == 1) {
-			fill(redH);
-		}
-
-		if (bool == 2) {
-			fill(blackH);
-		}
-
-		if (bool == 3) {
-			fill(blackH);
-		} 
-
-		noStroke();
-		tX=tX+28;
-		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 	}
 
 	function heart3() {
+		
+		if (bool >= 0) {
+			if (bool == 0) {
+				fill(redH);
+			}
 
-		if (bool == 0) {
-			fill(redH);
+			if (bool == 1) {
+				fill(redH);
+			}
+
+			if (bool == 2) {
+				fill(redH);
+			}
+
+			if (bool == 3) {
+				fill(blackH);
+			} 
+
+			noStroke();
+			tX=tX+28;            
+			triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
+			triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
+			triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 		}
-
-		if (bool == 1) {
-			fill(redH);
-		}
-
-		if (bool == 2) {
-			fill(redH);
-		}
-
-		if (bool == 3) {
-			fill(blackH);
-		} 
-
-		noStroke();
-		tX=tX+28;            
-		triangle(tX+108, tY-156, tX+101, tY-144, tX+114, tY-144);
-		triangle(tX+120, tY-156, tX+114, tY-144, tX+127, tY-144);
-		triangle(tX+113, tY-126, tX+101, tY-144, tX+127, tY-144);
 	}
 
 // Lava Functions
 
 	function lava1() {
-
-		fill(255, 0, 0);
-		ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+		
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
+		}
     	}
 
 	function lava2() {
-
-		fill(255, 0, 0);
-		ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+		
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
+		}
    	 }
 
 	function lava3() {
-
-		fill(255, 0, 0);
-		ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+		
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
+		}
     	}
 
 	 function lava4() {
-
-		fill(255, 0, 0);
-		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
+		 
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
+		}
    	}
 
 	 function lava5() {
 
-		fill(255, 0, 0);
-		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
+		 if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
+		 }
     	}
 
 	function lava6() {
 
-		fill(255, 0, 0);
-		ellipse(lavaX[5], lavaY[5], lavaSize, lavaSize);
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[5], lavaY[5], lavaSize, lavaSize);
+		}
 	}
 
 	function lava7() {
 
-		fill(255, 0, 0);
-		ellipse(lavaX[6], lavaY[6], lavaSize, lavaSize);
+		if (bool >= 0) {
+			fill(255, 0, 0);
+			ellipse(lavaX[6], lavaY[6], lavaSize, lavaSize);
+		}
 	}
 
 function potato() {
 
-	// No Cheating!!!
+	if (bool >= 0) {
+		// No Cheating!!!
 
-		if (mouseX >= 390) {
-			mouseX=385;
-		}
+			if (mouseX >= 390) {
+				mouseX=385;
+			}
 
-		if (mouseY <= 10) {
-		    	mouseY=15;
-		}
+			if (mouseY <= 10) {
+				mouseY=15;
+			}
 
-    	// Stuff
+		// Stuff
 
-        	stroke(0, 0, 0);
-        	strokeWeight(0.5);
+			stroke(0, 0, 0);
+			strokeWeight(0.5);
 
- 	// Potato
+		// Potato
 
-		fill(230, 197, 78);
-		ellipse(mouseX, mouseY, 43, 32);
+			fill(230, 197, 78);
+			ellipse(mouseX, mouseY, 43, 32);
 
-    	// Spots
+		// Spots
 
-		 fill(168, 161, 65);
-		 ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
-		 ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
-		 ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
+			 fill(168, 161, 65);
+			 ellipse(mouseX-10, mouseY-8, potatoSpot, potatoSpot);
+			 ellipse(mouseX+15, mouseY-4, potatoSpot, potatoSpot);
+			 ellipse(mouseX-4, mouseY+7, potatoSpot, potatoSpot);
+	}
 }
 
 function startScreen() {
-
-
+	if (bool == -1) {
+		fill(20, 20, 20);
+		rect(0, 0, 400, 400);
+	}
 }
 
 function endScreen() {
@@ -307,7 +342,7 @@ function endScreen() {
 		text("Cooked!", 120, 150);
 
 		textSize(14);
-		text("Click Refresh To play again", 100, 380);
+		text("Click Refresh To play again", 120, 380);
 
 		if (bool >= 3) {
 			fill(255, 0, 0);
