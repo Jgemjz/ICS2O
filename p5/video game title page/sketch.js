@@ -275,10 +275,6 @@ function potato() {
 		if (mouseX >= 400) {
 			mouseX=200;
 		}
-	
-		if (mouseY <= 0) {
-			bool=bool+1;
-		}
 		    
     	// Stuff
 
@@ -364,22 +360,37 @@ function endScreen() {
 			
 			if (num>=2501 && num<=3000) {
 			   	textSize(16);
-				text("(Really Good!)", 150, 300);
+				text("(Really Good!)", 160, 300);
 			}
 			
-			if (num>=3001 && num<=4477) {
+			if (num>=3001 && num<=4000) {
+			   	textSize(16);
+				text("(Swaggy!)", 170, 300);
+			}
+			
+			if (num>=4001 && num<=5000) {
 			   	textSize(16);
 				text("(Incredible!)", 160, 300);
 			}
 			
-			if (num==4478) {
+			if (num>=5001 && num<=6000) {
 			   	textSize(16);
-				text("(Cool! We Tied!)", 140, 300);
+				text("(Sick!)", 175, 300);
 			}
 			
-			if (num>=4478 && num<=9000) {
+			if (num>=6001 && num<=7000) {
 			   	textSize(16);
-				text("(You Beat My HighScore!!!)", 125, 300);
+				text("(Ya'll R Gud)", 150, 300);
+			}
+			
+			if (num>=7001 && num<=8000) {
+			   	textSize(16);
+				text("(You Dun Did Gud)", 145, 300);
+			}
+			
+			if (num>=8001 && num<=8999) {
+			   	textSize(16);
+				text("()", 160, 300);
 			}
 			
 			if (num>9000) {
