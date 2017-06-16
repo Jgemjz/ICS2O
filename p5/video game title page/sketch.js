@@ -333,10 +333,11 @@ function startScreen() {
 	rect(0, 0, 400, 400);
 	
 	fill(0, 0, 0);
-	text("Play?", 180, 300);
+	textSize(24);
+	text("Play?", 140, 280);
 	
-	fill(40, 140, 40);
-	rect(180, 300, 120, 55);
+	fill(153, 0, 153);
+	rect(140, 280, 120, 55);
 }
 
 function endScreen() {
