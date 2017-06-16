@@ -270,8 +270,12 @@ function potato() {
 
 	// No Cheating!!!
 	
-		if (mouseX >= 400) {
+		if (mouseX >= 390) {
 			mouseX=385;
+		}
+	
+		if (mouseY <= 10) {
+		    	mouseY=15;
 		}
 		    
     	// Stuff
