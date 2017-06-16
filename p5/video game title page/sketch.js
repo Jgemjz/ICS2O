@@ -2,6 +2,10 @@
 2017-04-23 To 2017-06-16
 Lucca*/ 
  
+// Write Mr. Potato Been Cooked
+
+//Got to HTML and make a title that says "Potato Dodge"
+
 // GloBaL vArIaBleS
 
    	 // Potato
