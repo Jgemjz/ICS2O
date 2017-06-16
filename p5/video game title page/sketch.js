@@ -333,7 +333,7 @@ function startScreen() {
 	rect(-1, -1, 401, 401);
 	
 	fill(153, 0, 153);
-	rect(140, 335, 120, 55);
+	rect(140, 320, 120, 55);
 	
 	fill(0, 0, 255);
 	textSize(20)
