@@ -1,17 +1,11 @@
 /*Potato Dodge Video Game
 2017-04-23 To 2017-06-16
 Lucca*/
- 
-/*
-	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
-	I'll do this...
-	I could make a button at the "game Over" screen that if it's pressed bool is -1 (starts Over).
-*/
 
 // GloBaL vArIaBleS
 
    	 // Potato
- 
+
 		var potatoX = 200;
 		var potatoY = 200;
 		var potatoSpot = 5;
@@ -48,7 +42,7 @@ function setup() {
 	createCanvas(400, 400);
 
 	// every time the the lava is drawn it starts at the top
-	
+
 	lavaAtTop();
     	lavaSize = 60;
 	bool = 0;
@@ -59,18 +53,18 @@ function draw() {
 	// Background
 
         	background(145, 156, 163);
-	
+
 	// Distance
-	
+
 		fill(0, 0, 0);
 		strokeWeight(0.5);
 		text(num, 15, 20);
 		num=num+1;
-	
+
 		if (bool >= 3) {
 			num=num;
 		}
-	
+
 	// Rectangle
 
 		stroke(0, 0, 0);
@@ -87,7 +81,7 @@ function draw() {
 		line(308, 40, 374, 40);
 
    	 // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
-    
+
 		for (var Q=0; Q<7; Q++) {
 			 lavaY[Q]=lavaY[Q]+speed[Q];
 			 if (lavaY[Q]>400) {
@@ -96,7 +90,7 @@ function draw() {
 				speed[Q]=random(4, 5);
 			 }
        		}
-    
+
     // CALLS
 
 	redH = color(255, 0, 0);
@@ -104,13 +98,13 @@ function draw() {
 
         tY = 200;
         tX = 200;	
-	
+
         heart1();
         heart2();
         heart3();
-	
+
 	potato();
-	
+
         lava1();
         lava2();
         lava3();
@@ -118,7 +112,7 @@ function draw() {
 	lava5();
 	lava6();
 	lava7();
-		
+
 // ball hitboxes/increasing "bool"
 
 	for (var Q=0; Q<7 && Q>=0; Q++) {
@@ -130,22 +124,22 @@ function draw() {
 			lavaAtTop();
 		}	
 	}
-	
+
 	if (bool >= 3) {
 		endScreen();
 	}
-	
+
 } // End of Draw Function!!!
 
 	function lavaAtTop() {
-		
+
 		for (var Q=0; Q<7; Q++) {
 		    lavaX[Q] = random(5, 395);
 			lavaY[Q]=-30;
-			
+
 		}
 	}
-	
+
 // Heart Functions
 
    	 function heart1() {
@@ -225,31 +219,31 @@ function draw() {
 // Lava Functions
 
 	function lava1() {
-		
+
 		fill(255, 0, 0);
 		ellipse(lavaX[0], lavaY[0], lavaSize, lavaSize);
     	}
 
 	function lava2() {
-		
+
 		fill(255, 0, 0);
 		ellipse(lavaX[1], lavaY[1], lavaSize, lavaSize);
    	 }
 
 	function lava3() {
-		
+
 		fill(255, 0, 0);
 		ellipse(lavaX[2], lavaY[2], lavaSize, lavaSize);
     	}
 
 	 function lava4() {
-		
+
 		fill(255, 0, 0);
 		ellipse(lavaX[3], lavaY[3], lavaSize, lavaSize);
    	}
 
 	 function lava5() {
-		
+
 		fill(255, 0, 0);
 		ellipse(lavaX[4], lavaY[4], lavaSize, lavaSize);
     	}
@@ -269,15 +263,15 @@ function draw() {
 function potato() {
 
 	// No Cheating!!!
-	
+
 		if (mouseX >= 390) {
 			mouseX=385;
 		}
-	
+
 		if (mouseY <= 10) {
 		    	mouseY=15;
 		}
-		    
+
     	// Stuff
 
         	stroke(0, 0, 0);
@@ -297,7 +291,8 @@ function potato() {
 }
 
 function startScreen() {
-// MAYBE DO???		
+
+
 }
 
 function endScreen() {
@@ -313,91 +308,83 @@ function endScreen() {
 
 		textSize(14);
 		text("Click Refresh To play again", 100, 380);
-	
+
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			textSize(28);
-			text("You Flew: " + num + "km!", 100, 260);
+			text("You Flew: " + num + "km!", 100, 240);
 			num=num-1;
-			
-			if (num==69) {
-				textSize(16);
-				text("(LOL)", 180, 300);
-			}
-			
-			if (num==420) {
-				textSize(16);
-				text("(Blaze It)", 160, 300);
-			}
-			
+
 			if (num>=0 && num <=100) {
 				textSize(16);
-				text("(Dude, You Suck)", 130, 300);
+				text("(Dude, You Suck)", 130, 280);
 			}
-			
+
 			if (num>=101 && num<=500) {
 				textSize(16);
 				text("(You Did Okayish)", 145, 300);
 			}
-			
+
 			if (num>=501 && num<=1000) {
 				textSize(16);
 				text("(Ehh, Not Bad)", 140, 300);
 			}
-			
+
 			if (num>=1001 && num<=1500) {
 			   	textSize(16);
 				text("(Y'all Been Shreked)", 145, 300);
 			}
-			
+
 			if (num>=1501 && num<=2000) {
 			   	textSize(16);
 				text("(Cool Beans!)", 145, 300);
 			}
-			
+
 			if (num>=2001 && num<=2500) {
 			   	textSize(16);
 				text("(WOW!)", 175, 300);
 			}
-			
+
 			if (num>=2501 && num<=3000) {
 			   	textSize(16);
 				text("(Really Good!)", 160, 300);
 			}
-			
+
 			if (num>=3001 && num<=4000) {
 			   	textSize(16);
 				text("(Swaggy!)", 170, 300);
 			}
-			
+
 			if (num>=4001 && num<=5000) {
 			   	textSize(16);
 				text("(Incredible!)", 160, 300);
 			}
-			
+
 			if (num>=5001 && num<=6000) {
 			   	textSize(16);
 				text("(Sick!)", 175, 300);
 			}
-			
+
 			if (num>=6001 && num<=7000) {
 			   	textSize(16);
 				text("(Y'all R Gud)", 150, 300);
 			}
-			
+
 			if (num>=7001 && num<=8000) {
 			   	textSize(16);
 				text("(You Dun Did Gud)", 145, 300);
 			}
-			
+
 			if (num>=8001 && num<=8999) {
 			   	textSize(16);
 				text("(Nice!)", 175, 300);
 			}
-			
+
 			if (num>9000) {
 			    	textSize(16);
 				text("(OVER 9000!!!)", 140, 300);
 			}
 		}
  }
+
+// END!
