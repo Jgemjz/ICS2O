@@ -1,8 +1,6 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-15
+2017-04-23 To 2017-06-16
 Lucca*/
-
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 /*
 	I think I'll make -1 the start of bool and once you hit the start button bool+=1;
@@ -273,7 +271,7 @@ function potato() {
 	// No Cheating!!!
 	
 		if (mouseX >= 400) {
-			mouseX=200;
+			mouseX=385;
 		}
 		    
     	// Stuff
@@ -335,7 +333,7 @@ function endScreen() {
 			
 			if (num>=101 && num<=500) {
 				textSize(16);
-				text("(Okayish)", 165, 300);
+				text("(You Did Okayish)", 145, 300);
 			}
 			
 			if (num>=501 && num<=1000) {
@@ -345,7 +343,7 @@ function endScreen() {
 			
 			if (num>=1001 && num<=1500) {
 			   	textSize(16);
-				text("(Yàll Been Shreked)", 145, 300);
+				text("(Y'all Been Shreked)", 145, 300);
 			}
 			
 			if (num>=1501 && num<=2000) {
@@ -380,7 +378,7 @@ function endScreen() {
 			
 			if (num>=6001 && num<=7000) {
 			   	textSize(16);
-				text("(Ya'll R Gud)", 150, 300);
+				text("(Y'all R Gud)", 150, 300);
 			}
 			
 			if (num>=7001 && num<=8000) {
