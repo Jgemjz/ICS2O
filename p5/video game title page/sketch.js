@@ -1,7 +1,7 @@
 /*Potato Dodge Video Game
 2017-04-23 To 2017-06-16
 Lucca*/ 
-//cbawhbrhbabargavbbhiawfovhawofpawrguv
+
 // GloBaL vArIaBleS
 
    	 // Potato
