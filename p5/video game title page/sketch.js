@@ -347,7 +347,7 @@ function startScreen() {
 	text("Instructions:", 110, 85);
 	
 	fill(0, 0, 255);
-	textSize(17);
+	textSize(14);
 	text("Mr. Potato has a fear of being cooked alive. Help", 20, 125);
 	text("him avoid his fear by keeping him away from the", 20, 150);
 	text("dripping lava! When hit by a lava ball you'll lose", 20, 175);
