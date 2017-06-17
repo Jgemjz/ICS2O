@@ -342,9 +342,11 @@ function startScreen() {
 	
 	textSize(30)
 	fill(0, 0, 0);
-	text("POTATO DODGE!!!", 85, 45);
+	text("POTATO DODGE!!!", 70, 45);
+	
+	textSize(26)
 	fill(0, 0, 255);
-	text("Instructions:", 110, 85);
+	text("Instructions:", 110, 80);
 	
 	fill(0, 0, 255);
 	textSize(14);
