@@ -373,7 +373,7 @@ function endScreen() {
 
 		fill(240, 10, 10);
 		textSize(45);
-		text("Potato Been", 70, 100);
+		text("Mr.Potato Been", 75, 100);
 		textSize(42);
 		text("Cooked!", 120, 150);
 
