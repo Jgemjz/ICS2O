@@ -349,7 +349,7 @@ function startScreen() {
 	text("Instructions:", 100, 80);
 	
 	fill(0, 0, 255);
-	textSize(14);
+	textSize(18);
 	text("Mr. Potato has a fear of being cooked alive. Help", 40, 130);
 	text("him avoid his fear by keeping him away from the", 35, 150);
 	text("dripping lava! You control Mr. Potato using the mouse", 45, 170);  
