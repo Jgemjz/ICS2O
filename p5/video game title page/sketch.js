@@ -341,8 +341,8 @@ function startScreen() {
 	
 	fill(0, 0, 255);
 	textSize(20)
-	text("Potato Dodge!!!", 110, 40);
-	text("INSTRUCTIONS:", 110, 70);
+	text("POTATO DODGE!!!", 110, 45);
+	text("Instructions:", 110, 85);
 	
 	fill(0, 0, 255);
 	textSize(17);
