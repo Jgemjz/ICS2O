@@ -1,5 +1,5 @@
 /*Potato Dodge Video Game
-2017-04-23 To 2017-06-16
+2017-04-23 To 2017-06-19
 Lucca*/ 
  
 // Write Mr. Potato Been Cooked
@@ -346,14 +346,14 @@ function startScreen() {
 	
 	textSize(25)
 	fill(0, 0, 255);
-	text("Instructions:", 100, 80);
+	text("Instructions:", 120, 120);
 	
 	fill(0, 0, 255);
 	textSize(18);
-	text("Mr. Potato has a fear of being cooked alive. Help", 40, 130);
-	text("him avoid his fear by keeping him away from the", 35, 150);
-	text("dripping lava! You control Mr. Potato using the mouse", 45, 170);  
-	text("Good Luck!", 130, 190);  
+	text("Mr. Potato has a fear of being cooked alive. Help", 7, 150);
+	text("him avoid his fear by keeping him away from the", 7, 170);
+	text("dripping lava! You control Mr. Potato using the", 7, 190);  
+	text("mouse. Good Luck!", 125, 210);  
 	
 	
 	fill(0, 0, 0);
