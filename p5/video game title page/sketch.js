@@ -379,7 +379,7 @@ function endScreen() {
 		if (bool >= 3) {
 			fill(255, 0, 0);
 			textSize(28);
-			text("Mr. Potato Ran " + num + "km!", 95, 240);
+			text("Mr. Potato Ran " + num + "km!", 75, 240);
 			num=num-1;
 
 			if (num>=0 && num <=100) {
