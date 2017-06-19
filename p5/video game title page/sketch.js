@@ -72,9 +72,7 @@ function draw() {
 			num=num+1;
 		}
 	
-		if (bool >= 3) {
-			num=num;
-		}
+	
 	
 	// Rectangle
 	
