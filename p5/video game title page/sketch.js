@@ -2,6 +2,16 @@
 2017-04-23 To 2017-06-19
 Lucca*/ 
 
+/*
+	The variable bool will start at -1 and if bool is equal to -1 (Which it is) then it will call the startScreen function. Once you click the play button bool gets 1 so now bool is 0. 
+	if bool is equal to or more than zero all of the functions in the main game will be called (like potato, lava[] and hearts) So the game will start.
+	if mr. potato is within the hitbox of one of the lava balls bool gets 1 so if you get hit bool=bool+1.
+	if bool is 0 then all hearts will be red (all lives) and numbers will start going up from one in the top left corner rapidly using the num variable that is 0 + 1.
+	if bool is 1 the first heart will go black and the other two will still be red (One life lost).
+	If bool is 2 the first two hearts will be black and the third heart will be red (Two lives lost).
+	If bool is 3 or more the endScreen will be called and cover up the game with a black rect with the final words and num will be num+1 and num-1 so the ammount will hover at your distance score .
+*/
+
 // GloBaL vArIaBleS
 
    	 // Potato 
@@ -92,7 +102,9 @@ function draw() {
 			strokeWeight(1);
 			line(308, 40, 374, 40);
 		}
+	
    	 // moving the lava downwards and bringing the lava back to the top when it falls off the bottom
+	
 		if (bool >= 0) {
 			for (var Q=0; Q<7; Q++) {
 				 lavaY[Q]=lavaY[Q]+speed[Q];
@@ -126,7 +138,7 @@ function draw() {
 	lava6();
 	lava7();
 
-// ball hitboxes/increasing "bool"
+// ball hitboxes/increasing bools value
 	
 	if (bool >= 0) {
 		for (var Q=0; Q<7 && Q>=0; Q++) {
