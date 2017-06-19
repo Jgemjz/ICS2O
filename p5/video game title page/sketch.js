@@ -1,14 +1,10 @@
 /*Potato Dodge Video Game
 2017-04-23 To 2017-06-19
 Lucca*/ 
- 
-// Write Mr. Potato Been Cooked
-
-//Got to HTML and make a title that says "Potato Dodge"
 
 // GloBaL vArIaBleS
 
-   	 // Potato
+   	 // Potato 
 
 		var potatoX = 200;
 		var potatoY = 200;
@@ -37,7 +33,7 @@ Lucca*/
 		var redH;
 		var blackH;
 
-	// Other
+	// variable indecating distance
 
 		var num = 0;	
 
@@ -45,11 +41,13 @@ function setup() {
 
 	createCanvas(400, 400);
 
-	// every time the the lava is drawn it starts at the top
+	
 	
 		lavaSize = 60;
 		bool = -1;
-
+	
+// If my variable bool is zero or more call the lavaAtTop function
+	
 		if (bool >= 0) {
 			lavaAtTop();
 		}
