@@ -1,7 +1,24 @@
+/*Game Fun
+2017-07-06
+Lucca*/
+
+// Variables
+
+
+
 function setup() {
-  createCanvas(640, 480);
+  
+    createCanvas(400, 400);
+  
 }
 
 function draw() {
-  ellipse(200, 200, 80, 80);
+
+    // Background
+  
+          background(0, 0, 0);
+  
+    // Calls
+  
+    
 }
