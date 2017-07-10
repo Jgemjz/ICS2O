@@ -2,7 +2,7 @@
 2017-07-06
 Lucca*/
 
-// Variables
+// Global Variables
 
 
 
@@ -16,9 +16,16 @@ function draw() {
 
     // Background
   
-          background(100, 100, 100);
+          background(100, 100, 100); 
   
     // Calls
   
-    
+          ball();
+}
+
+function ball() {
+
+    fill(0, 0, 0);
+    ellipse(10, 10, 200, 200);
+
 }
