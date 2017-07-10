@@ -21,7 +21,7 @@ function draw() {
     // Calls
   
           ball();
-}
+};
 
 function ball() {
 
