@@ -30,6 +30,6 @@ function floorPattern() {
 	rect(40, 300, 80, 120)
 	
 	fill(0, 0, 0);
-	rect(50, 300, 40, 40)
+	rect(20, 280, 40, 40)
 }
 
