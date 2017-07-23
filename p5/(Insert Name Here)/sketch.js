@@ -8,7 +8,7 @@ Lucca*/
 
 function setup() {
 
-	createCanvas(1800, 1200);
+	createCanvas(1800, 1000);
 }
 
 function draw() {
