@@ -15,7 +15,7 @@ function draw() {
 	
 	//Backgound
 	
-		background(0, 0, 0);
+		background(50, 50, 50);
 	
 	//Calls
 	
