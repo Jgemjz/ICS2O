@@ -1,8 +1,8 @@
-/* (Insert Project Name Here)
-(Insert Date Here)
+/* Side Scroller
+2017-07-23
 Lucca*/
 
-// Global Variables
+//Global Variables
 
 
 
@@ -11,9 +11,20 @@ function setup() {
 	createCanvas(400, 400);
 }
 
-
 function draw() {
+	
+	//Backgound
+	
+		background(0, 0, 0);
+	
+	//Calls
+	
+		floorPattern();
+}
 
-	ellipse(200, 200, 80, 80);
+function floorPattern() {
+	
+	fill(0, 0, 0);
+	rect(10, 10, 10, 10)
 }
 
