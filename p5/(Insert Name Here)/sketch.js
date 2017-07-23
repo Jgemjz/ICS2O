@@ -27,6 +27,6 @@ function draw() {
 function floorPattern() {
 	
 	fill(0, 0, 0);
-	rect(10, 10, 10, 10)
+	rect(390, 50, 40, 10)
 }
 
